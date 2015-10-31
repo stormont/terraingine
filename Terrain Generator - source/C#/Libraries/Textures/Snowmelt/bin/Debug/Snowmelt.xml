@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Snowmelt</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.Snowmelt.Driver">
+            <summary>
+            Class for applying a snowmelt generator to a TerrainPage.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.Snowmelt.Driver.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowmelt.Driver.#ctor">
+            <summary>
+            Creates a snowmelt generator form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowmelt.Driver.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowmelt.Driver.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowmelt.Driver.MeltSnow">
+            <summary>
+            Applies the snowmelt generator to the TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowmelt.Driver.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.Snowmelt.Driver.TerrainPage">
+            <summary>
+            Gets the TerrainPage used.
+            </summary>
+        </member>
+    </members>
+</doc>

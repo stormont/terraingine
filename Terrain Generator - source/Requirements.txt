@@ -1,0 +1,54 @@
+TERRAIN GENERATOR
+=================
+
+X - Indicates completed function.
+/ - Indicates a work in progress.
+O - Indicates a possibly dropped function.
+
+
+VERSION 1 NEEDS:
+Vertex Editing:
+-X Visually create and edit height map data.
+-X Use graphical interface to manually modify individual vertices.
+-X Allow modification of height map size at run time.
+-X Use "soft selection" to move vertices.
+-X Apply smoothing algorithms to terrain.
+-X Set vertex height through text boxes.
+
+Texture Editing:
+-X Apply texture(s) to terrain and manually modify positioning/scale.
+-X Apply texture modification algorithms.
+
+File Handling:
+-X Store height map, textures, and alpha maps as individual files.
+-X Load/unload/save height map data.
+-X Accept drag-and-drop files to be loaded.
+-X Allow plugins to be used for smoothing methods and import/export methods and other techniques (shaders for rendering?).
+-X Create DLL to plug into other programs that deals directly with Terraingine data manipulation (middleware for other programs).
+
+GUI Functions:
+-X Allow camera rotations and zooming operations.
+-X View terrain in solid or wireframe mode.
+-X View colored vertices according to height.
+-X Allow stack of modifiers to be added/removed (undo/redo, such as smoothing).
+-X Provide easy-to-use Lua scripting system.
+-/ Provide extensive help and documentation.
+
+
+VERSION 2 NEEDS:
+- Store user-preferred presets (Last value on common controls).
+-O Allow stitching of multiple height maps. (Revised to next entry.)
+- Make expandable height maps using QuadTree stitching.
+- View adjacent terrain up to a given number of tiles.
+- Be able to "paint" a texture onto a sub-tile.
+- View adjacent terrain in wireframe mode, without texturing, while active tile is solid.
+- Allow users to modify layout.
+- Specify the number of vertices (square) that make up a sub-tile.
+-/ Apply algorithms to current terrain, with blending weight.
+- Switch between perspective and side views.
+- Present tree hierarchy view of terrain pages/texture data, etc.
+- Tie individual files's data together using scripting system.
+- Allow plugins to be used for rendering (shaders?).
+- Apply texture splatting techniques to terrain.
+-O Use progressive meshes for zooming in and out?
+- Individually view and modify textures applied to terrain (including opacity).

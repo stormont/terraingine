@@ -1,0 +1,181 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terraingine", "Terraingine.csproj", "{EF0C92E7-89E8-45A2-A3C0-36EB469CF9BB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{82A2341F-4D5F-4476-8DE1-F46164A250EA} = {82A2341F-4D5F-4476-8DE1-F46164A250EA}
+		{2A96455C-5267-4340-BD2C-4197F35722CA} = {2A96455C-5267-4340-BD2C-4197F35722CA}
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1} = {3A03DBA0-3162-40F2-802A-CC686CAD3DB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoiseGenerator", "Libraries\Vertices\NoiseGenerator\NoiseGenerator.csproj", "{BCCECB4C-45CC-481C-99BA-B749C8685625}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1} = {3A03DBA0-3162-40F2-802A-CC686CAD3DB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCore", "Libraries\Core\DataCore\DataCore.csproj", "{23C17E9C-EC9C-43F1-9064-807BBEA39255}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXViewport", "Libraries\Core\DXViewport\DXViewport.csproj", "{2A96455C-5267-4340-BD2C-4197F35722CA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmoothVertices", "Libraries\Vertices\SmoothVertices\SmoothVertices.csproj", "{215E1061-94D9-4608-9A79-AAF58D7DC811}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1} = {3A03DBA0-3162-40F2-802A-CC686CAD3DB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportTerrainBitmap", "Libraries\Importing\ImportTerrainBitmap\ImportTerrainBitmap.csproj", "{DB31C8E4-55CA-4409-A102-9527ABA2D344}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1} = {3A03DBA0-3162-40F2-802A-CC686CAD3DB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlugIn", "Libraries\Core\PlugIn\PlugIn.csproj", "{3A03DBA0-3162-40F2-802A-CC686CAD3DB1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportTerrainText", "Libraries\Exporting\ExportTerrainText\ExportTerrainText.csproj", "{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1} = {3A03DBA0-3162-40F2-802A-CC686CAD3DB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportTerrainBitmap", "Libraries\Exporting\ExportTerrainBitmap\ExportTerrainBitmap.csproj", "{F47D7228-646A-4A4E-B31C-18BE0F1DD1D2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1} = {3A03DBA0-3162-40F2-802A-CC686CAD3DB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataInterfacing", "Libraries\Core\DataInterfacing\DataInterfacing.csproj", "{82A2341F-4D5F-4476-8DE1-F46164A250EA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A96455C-5267-4340-BD2C-4197F35722CA} = {2A96455C-5267-4340-BD2C-4197F35722CA}
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1} = {3A03DBA0-3162-40F2-802A-CC686CAD3DB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportTerrainRaw", "Libraries\Exporting\ExportTerrainRaw\ExportTerrainRaw.csproj", "{F47D7228-646A-4A4E-B31C-18BE0F1DD1D2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1} = {3A03DBA0-3162-40F2-802A-CC686CAD3DB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportTerrainRaw", "Libraries\Importing\ImportTerrainRaw\ImportTerrainRaw.csproj", "{DB31C8E4-55CA-4409-A102-9527ABA2D344}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1} = {3A03DBA0-3162-40F2-802A-CC686CAD3DB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportTerrainProject", "Libraries\Exporting\ExportTerrainProject\ExportTerrainProject.csproj", "{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255} = {23C17E9C-EC9C-43F1-9064-807BBEA39255}
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1} = {3A03DBA0-3162-40F2-802A-CC686CAD3DB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportTerrainProject", "Libraries\Importing\ImportTerrainProject\ImportTerrainProject.csproj", "{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowfall", "Libraries\Textures\Snowfall\Snowfall.csproj", "{BCCECB4C-45CC-481C-99BA-B749C8685625}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainfall", "Libraries\Vertices\Rainfall\Rainfall.csproj", "{BCCECB4C-45CC-481C-99BA-B749C8685625}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowmelt", "Libraries\Textures\Snowmelt\Snowmelt.csproj", "{BCCECB4C-45CC-481C-99BA-B749C8685625}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuaNetInterface", "Libraries\Core\LuaNetInterface\LuaNetInterface.csproj", "{2EE5AE6F-0DD3-4DBB-8415-C182482BF788}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EF0C92E7-89E8-45A2-A3C0-36EB469CF9BB}.Debug.ActiveCfg = Debug|.NET
+		{EF0C92E7-89E8-45A2-A3C0-36EB469CF9BB}.Debug.Build.0 = Debug|.NET
+		{EF0C92E7-89E8-45A2-A3C0-36EB469CF9BB}.Release.ActiveCfg = Release|.NET
+		{EF0C92E7-89E8-45A2-A3C0-36EB469CF9BB}.Release.Build.0 = Release|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Debug.ActiveCfg = Debug|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Debug.Build.0 = Debug|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Release.ActiveCfg = Release|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Release.Build.0 = Release|.NET
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255}.Debug.ActiveCfg = Debug|.NET
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255}.Debug.Build.0 = Debug|.NET
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255}.Release.ActiveCfg = Release|.NET
+		{23C17E9C-EC9C-43F1-9064-807BBEA39255}.Release.Build.0 = Release|.NET
+		{2A96455C-5267-4340-BD2C-4197F35722CA}.Debug.ActiveCfg = Debug|.NET
+		{2A96455C-5267-4340-BD2C-4197F35722CA}.Debug.Build.0 = Debug|.NET
+		{2A96455C-5267-4340-BD2C-4197F35722CA}.Release.ActiveCfg = Release|.NET
+		{2A96455C-5267-4340-BD2C-4197F35722CA}.Release.Build.0 = Release|.NET
+		{215E1061-94D9-4608-9A79-AAF58D7DC811}.Debug.ActiveCfg = Debug|.NET
+		{215E1061-94D9-4608-9A79-AAF58D7DC811}.Debug.Build.0 = Debug|.NET
+		{215E1061-94D9-4608-9A79-AAF58D7DC811}.Release.ActiveCfg = Release|.NET
+		{215E1061-94D9-4608-9A79-AAF58D7DC811}.Release.Build.0 = Release|.NET
+		{DB31C8E4-55CA-4409-A102-9527ABA2D344}.Debug.ActiveCfg = Debug|.NET
+		{DB31C8E4-55CA-4409-A102-9527ABA2D344}.Debug.Build.0 = Debug|.NET
+		{DB31C8E4-55CA-4409-A102-9527ABA2D344}.Release.ActiveCfg = Release|.NET
+		{DB31C8E4-55CA-4409-A102-9527ABA2D344}.Release.Build.0 = Release|.NET
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1}.Debug.ActiveCfg = Debug|.NET
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1}.Debug.Build.0 = Debug|.NET
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1}.Release.ActiveCfg = Release|.NET
+		{3A03DBA0-3162-40F2-802A-CC686CAD3DB1}.Release.Build.0 = Release|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Debug.ActiveCfg = Debug|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Debug.Build.0 = Debug|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Release.ActiveCfg = Release|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Release.Build.0 = Release|.NET
+		{F47D7228-646A-4A4E-B31C-18BE0F1DD1D2}.Debug.ActiveCfg = Debug|.NET
+		{F47D7228-646A-4A4E-B31C-18BE0F1DD1D2}.Debug.Build.0 = Debug|.NET
+		{F47D7228-646A-4A4E-B31C-18BE0F1DD1D2}.Release.ActiveCfg = Release|.NET
+		{F47D7228-646A-4A4E-B31C-18BE0F1DD1D2}.Release.Build.0 = Release|.NET
+		{82A2341F-4D5F-4476-8DE1-F46164A250EA}.Debug.ActiveCfg = Debug|.NET
+		{82A2341F-4D5F-4476-8DE1-F46164A250EA}.Debug.Build.0 = Debug|.NET
+		{82A2341F-4D5F-4476-8DE1-F46164A250EA}.Release.ActiveCfg = Release|.NET
+		{82A2341F-4D5F-4476-8DE1-F46164A250EA}.Release.Build.0 = Release|.NET
+		{F47D7228-646A-4A4E-B31C-18BE0F1DD1D2}.Debug.ActiveCfg = Debug|.NET
+		{F47D7228-646A-4A4E-B31C-18BE0F1DD1D2}.Debug.Build.0 = Debug|.NET
+		{F47D7228-646A-4A4E-B31C-18BE0F1DD1D2}.Release.ActiveCfg = Release|.NET
+		{F47D7228-646A-4A4E-B31C-18BE0F1DD1D2}.Release.Build.0 = Release|.NET
+		{DB31C8E4-55CA-4409-A102-9527ABA2D344}.Debug.ActiveCfg = Debug|.NET
+		{DB31C8E4-55CA-4409-A102-9527ABA2D344}.Debug.Build.0 = Debug|.NET
+		{DB31C8E4-55CA-4409-A102-9527ABA2D344}.Release.ActiveCfg = Release|.NET
+		{DB31C8E4-55CA-4409-A102-9527ABA2D344}.Release.Build.0 = Release|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Debug.ActiveCfg = Debug|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Debug.Build.0 = Debug|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Release.ActiveCfg = Release|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Release.Build.0 = Release|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Debug.ActiveCfg = Debug|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Debug.Build.0 = Debug|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Release.ActiveCfg = Release|.NET
+		{DB358DD7-AF81-4972-A7F3-C5A1B165E0BF}.Release.Build.0 = Release|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Debug.ActiveCfg = Debug|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Debug.Build.0 = Debug|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Release.ActiveCfg = Release|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Release.Build.0 = Release|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Debug.ActiveCfg = Debug|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Debug.Build.0 = Debug|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Release.ActiveCfg = Release|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Release.Build.0 = Release|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Debug.ActiveCfg = Debug|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Debug.Build.0 = Debug|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Release.ActiveCfg = Release|.NET
+		{BCCECB4C-45CC-481C-99BA-B749C8685625}.Release.Build.0 = Release|.NET
+		{2EE5AE6F-0DD3-4DBB-8415-C182482BF788}.Debug.ActiveCfg = Debug|.NET
+		{2EE5AE6F-0DD3-4DBB-8415-C182482BF788}.Debug.Build.0 = Debug|.NET
+		{2EE5AE6F-0DD3-4DBB-8415-C182482BF788}.Release.ActiveCfg = Release|.NET
+		{2EE5AE6F-0DD3-4DBB-8415-C182482BF788}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

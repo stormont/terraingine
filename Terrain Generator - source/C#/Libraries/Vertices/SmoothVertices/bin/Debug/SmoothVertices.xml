@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmoothVertices</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.SmoothVertices.Driver">
+            <summary>
+            Summary description for Smooth.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.SmoothVertices.Driver.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.SmoothVertices.Driver.#ctor">
+            <summary>
+            Creates a smoothing modifier form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.SmoothVertices.Driver.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.SmoothVertices.Driver.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.SmoothVertices.Driver.SmoothVertices(System.Int32)">
+            <summary>
+            Smooths the vertices in the TerrainPatch based upon a box-filtering
+            method of averaging nearby vertices.
+            </summary>
+            <param name="numAdjVerts">Number of adjacent vertices that affect the smoothing.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.SmoothVertices.Driver.btnRun_Click(System.Object,System.EventArgs)">
+            <summary>
+            Runs the plug-in effect.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.SmoothVertices.Driver.numVertices_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Checks that the number of adjacent vertices is not more than the current
+            size of the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.SmoothVertices.Driver.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.SmoothVertices.Driver.TerrainPage">
+            <summary>
+            Gets the TerrainPage used.
+            </summary>
+        </member>
+    </members>
+</doc>

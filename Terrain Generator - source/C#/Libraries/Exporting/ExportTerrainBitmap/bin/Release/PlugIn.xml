@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PlugIn</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.PlugIn">
+            <summary>
+            Driver class for a plug-in.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.PlugIn._desiredData">
+            <summary>
+            List for holding the plug-in's desired data.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.PlugIn._receivedData">
+            <summary>
+            List for holding the plug-in's received data.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.PlugIn._page">
+            <summary>
+            TerrainPage of the plug-in.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.PlugIn._owner">
+            <summary>
+            Owner control of the plug-in.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.PlugIn._name">
+            <summary>
+            Name of the plug-in.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.PlugIn._success">
+            <summary>
+            Boolean for holding whether the plug-in was successful.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.PlugIn._modifiedTextures">
+            <summary>
+            Boolean for holding whether textures were modified by the plug-in.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.PlugIn._textures">
+            <summary>
+            List for holding changed vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.#ctor">
+            <summary>
+            Creates the Driver class.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.InitializeBase">
+            <summary>
+            Initialize the data of the base element.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.SetPage(Voyage.Terraingine.DataCore.TerrainPage)">
+            <summary>
+            Sets the TerrainPage used by the plug-in.
+            </summary>
+            <param name="page">The TerrainPage to modify.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.GetPage">
+            <summary>
+            Gets the TerrainPage used by the plug-in.
+            </summary>
+            <returns>The modified TerrainPage.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.SetTextures(System.Collections.ArrayList)">
+            <summary>
+            Sets the texture filenames used by the plug-in.
+            </summary>
+            <param name="textures">The texture filenames to modify.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.SetReceivedData(System.Collections.ArrayList)">
+            <summary>
+            Sets the received data given to the plug-in.
+            </summary>
+            <param name="data">The list of received data.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.SetOwner(System.Windows.Forms.Control)">
+            <summary>
+            Sets the Control that uses the plug-in.
+            </summary>
+            <param name="owner">The Control that owns the plug-in.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.GetOwner">
+            <summary>
+            Gets the Control that uses the plug-in.
+            </summary>
+            <returns>The modified TerrainPage.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.GetName">
+            <summary>
+            Gets the name of the plug-in.
+            </summary>
+            <returns>The name of the plug-in.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.GetSuccess">
+            <summary>
+            Gets if the plug-in was successfully run.
+            </summary>
+            <returns>Returns if the plug-in succeeded.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.GetTextures">
+            <summary>
+            Gets the textures used by the plug-in.
+            </summary>
+            <returns>The modified textures.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.GetDesiredData">
+            <summary>
+            Gets the desired data requested by the plug-in.
+            </summary>
+            <returns>The list of desired data types.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.GetModifiedTextures">
+            <summary>
+            Gets if textures were modified by the plug-in.
+            </summary>
+            <returns>Whether textures were modified.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.PlugIn.AutoRun(System.Collections.ArrayList)">
+            <summary>
+            Runs the plug-in as an automatic function.
+            </summary>
+            <param name="objects">Additional data sent to the plug-in.</param>
+        </member>
+        <member name="T:Voyage.Terraingine.PlugIn.DesiredData">
+            <summary>
+            Enumeration for different types of data desired from the calling program.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.PlugIn.DesiredData.Lighting">
+            <summary>
+            Plug-in desires lighting data.
+            </summary>
+        </member>
+    </members>
+</doc>

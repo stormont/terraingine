@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExportTerrainBitmap</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.ExportTerrainBitmap.Driver">
+            <summary>
+            Driver class for the ExportTerrainBitmap plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainBitmap.Driver.#ctor">
+            <summary>
+            Creates the Driver class.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainBitmap.Driver.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainBitmap.Driver.WriteBitmap">
+            <summary>
+            Writes the bitmap data to the chosen file in the SaveFileDialog.
+            </summary>
+        </member>
+    </members>
+</doc>

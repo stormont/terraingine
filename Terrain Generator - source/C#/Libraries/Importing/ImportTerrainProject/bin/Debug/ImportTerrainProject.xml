@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImportTerrainProject</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.ImportTerrainProject.Driver">
+            <summary>
+            Driver class for the ImportTerrainProject plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.#ctor">
+            <summary>
+            Creates the Driver class.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.AutoRun(System.Collections.ArrayList)">
+            <summary>
+            Runs the plug-in as an automatic function.
+            </summary>
+            <param name="objects">Additional data sent to the plug-in.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.LoadXML">
+            <summary>
+            Loads XML data from the chosen file in the OpenFileDialog.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.LoadTerrainPage(System.Xml.XmlNode)">
+            <summary>
+            Loads data about the TerrainPage from the XML document.
+            </summary>
+            <param name="xmlNode">The XML node to load data from.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.LoadTerrainPatch(System.Xml.XmlNode)">
+            <summary>
+            Loads data about the TerrainPatch from the XML document.
+            </summary>
+            <param name="xmlNode">The XML node to load data from.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.LoadTexture(System.Xml.XmlNode)">
+            <summary>
+            Loads data about a texture from the XML document.
+            </summary>
+            <param name="xmlNode">The XML node to load data from.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.LoadVertex(System.Xml.XmlNode,System.Int32)">
+            <summary>
+            Loads data about a vertex from the XML document.
+            </summary>
+            <param name="xmlNode">The XML node to load data from.</param>
+            <param name="index">The index of the vertex to load.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.LoadTextNode(System.Xml.XmlNode)">
+            <summary>
+            Loads text data from an XmlNode.
+            </summary>
+            <param name="xmlElem">The XmlNode from which to load data.</param>
+            <returns>The text data contained in the XmlNode.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.LoadVector2Node(System.Xml.XmlNode)">
+            <summary>
+            Loads Vector2 data from an XmlNode.
+            </summary>
+            <param name="xmlElem">The XmlNode from which to load data.</param>
+            <returns>The Vector2 data contained in the XmlNode.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.LoadVector3Node(System.Xml.XmlNode)">
+            <summary>
+            Loads Vector3 data from an XmlNode.
+            </summary>
+            <param name="xmlElem">The XmlNode from which to load data.</param>
+            <returns>The Vector3 data contained in the XmlNode.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainProject.Driver.LoadQuaternionNode(System.Xml.XmlNode)">
+            <summary>
+            Loads Quaternion data from an XmlNode.
+            </summary>
+            <param name="xmlElem">The XmlNode from which to load data.</param>
+            <returns>The Quaternion data contained in the XmlNode.</returns>
+        </member>
+        <member name="P:Voyage.Terraingine.ImportTerrainProject.Driver.ProjectName">
+            <summary>
+            Gets the name of the project imported.
+            </summary>
+        </member>
+    </members>
+</doc>

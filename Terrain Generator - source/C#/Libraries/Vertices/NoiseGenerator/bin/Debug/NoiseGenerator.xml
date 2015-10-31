@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NoiseGenerator</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.NoiseGenerator.Driver">
+            <summary>
+            Class for applying a noise modifier to a TerrainPage.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.NoiseGenerator.Driver.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.NoiseGenerator.Driver.#ctor">
+            <summary>
+            Creates a noise modifier form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.NoiseGenerator.Driver.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.NoiseGenerator.Driver.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.NoiseGenerator.Driver.CreateNoise(System.Single,System.Single,System.Boolean)">
+            <summary>
+            Applies the noise modifier to the TerrainPage.
+            </summary>
+            <param name="maxScale">The maximum noise modifier.</param>
+            <param name="minScale">The minimum noise modifier.</param>
+            <param name="overwrite">Whether to overwrite or modify the previous positions.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.NoiseGenerator.Driver.btnRun_Click(System.Object,System.EventArgs)">
+            <summary>
+            Runs the noise modifier.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.NoiseGenerator.Driver.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.NoiseGenerator.Driver.TerrainPage">
+            <summary>
+            Gets the TerrainPage used.
+            </summary>
+        </member>
+    </members>
+</doc>

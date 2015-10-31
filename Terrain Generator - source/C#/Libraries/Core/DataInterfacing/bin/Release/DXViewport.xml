@@ -1,0 +1,982 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DXViewport</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.DXViewport.Effect">
+            <summary>
+            A class to handle creation and usage of DirectX Effects.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Effect.#ctor">
+            <summary>
+            Creates the Effect object.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Effect.CreateEffect(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Creates a DirectX Effect.
+            </summary>
+            <param name="device">The DirectX device that creates the effect.</param>
+            <returns>Whether the Effect was created.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Effect.CreateEffectFromFile(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Creates a DirectX Effect from a file.
+            </summary>
+            <param name="device">The DirectX device that creates the effect.</param>
+            <returns>Whether the Effect was created.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Effect.CreateEffectFromStream(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Creates a DirectX Effect from a data stream.
+            </summary>
+            <param name="device">The DirectX device that creates the effect.</param>
+            <returns>Whether the Effect was created.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Effect.CreateEffectFromString(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Creates a DirectX Effect from a string of source data.
+            </summary>
+            <param name="device">The DirectX device that creates the effect.</param>
+            <returns>Whether the Effect was created.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Effect.ValidateTechnique(System.String)">
+            <summary>
+            Checks if the specified technique in the effect is valid.
+            </summary>
+            <param name="name">The name of the technique to validate.</param>
+            <returns>Whether the technique is valid.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Effect.Dispose">
+            <summary>
+            Disposes of the Effect object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Effect.CreationMethod">
+            <summary>
+            Gets or sets the creation type for the Effect.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Effect.DXEffect">
+            <summary>
+            Gets or sets the DirectX effect.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Effect.FileName">
+            <summary>
+            Gets or sets the name of the Effect file.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Effect.Stream">
+            <summary>
+            Gets or sets the stream data used for the Effect.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Effect.SourceData">
+            <summary>
+            Gets or sets the source data for the Effect.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Effect.PreProcessorDefines">
+            <summary>
+            Gets or sets the array of preprocessor macro definitions used during Effect creation.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Effect.IncludeFile">
+            <summary>
+            Gets or sets the Include object to use for handling #include directives during Effect creation.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Effect.Flags">
+            <summary>
+            Gets or sets the shader compilation flags used during Effect creation.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Effect.Pool">
+            <summary>
+            Gets or sets the EffectPool object to use for shared parameters.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Effect.Errors">
+            <summary>
+            Gets the compilation errors returned during Effect creation.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DXViewport.Effect.CreationType">
+            <summary>
+            Enumeration for the allowed effect creation types.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.Effect.CreationType.File">
+            <summary>
+            Type for creating an effect file.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.Effect.CreationType.Stream">
+            <summary>
+            Type for creating an effect stream.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.Effect.CreationType.String">
+            <summary>
+            Type for creating an effect string.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DXViewport.Font2D">
+            <summary>
+            A 2D font object in DirectX.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Font2D.#ctor(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Creates a 2D Direct3D font object.
+            </summary>
+            <param name="device">DirectX device to attach the font to.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Font2D.#ctor(Microsoft.DirectX.Direct3D.Device,System.Drawing.Font)">
+            <summary>
+            Creates a 2D Direct3D font object.
+            </summary>
+            <param name="device">DirectX device to attach the font to.</param>
+            <param name="font">Windows font to draw with.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Font2D.CreateFont(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Creates the Direct3D font object.
+            </summary>
+            <param name="device">DirectX device to attach the font to.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Font2D.ChangeFont(Microsoft.DirectX.Direct3D.Device,System.Drawing.Font)">
+            <summary>
+            Changes the font used by the Direct3D font object.
+            </summary>
+            <param name="device">DirectX device to attach the font to.</param>
+            <param name="font">Windows font to change to.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Font2D.DrawText(System.String,System.Drawing.Rectangle)">
+            <summary>
+            Draws the specified text using the Direct3D font object.
+            </summary>
+            <param name="text">Text to draw.</param>
+            <param name="rect">Rectangle to draw the text in.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Font2D.DrawText(System.String,System.Drawing.Rectangle,Microsoft.DirectX.Direct3D.Sprite)">
+            <summary>
+            Draws the specified text using the Direct3D font object.
+            </summary>
+            <param name="text">Text to draw.</param>
+            <param name="rect">Rectangle to draw the text in.</param>
+            <param name="sprite">Sprite background for the text.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Font2D.DrawText(System.String,System.Drawing.Rectangle,Microsoft.DirectX.Direct3D.Sprite,Microsoft.DirectX.Direct3D.DrawTextFormat)">
+            <summary>
+            Draws the specified text using the Direct3D font object.
+            </summary>
+            <param name="text">Text to draw.</param>
+            <param name="rect">Rectangle to draw the text in.</param>
+            <param name="sprite">Sprite background for the text.</param>
+            <param name="format">Text formatting options.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Font2D.DrawText(System.String,System.Drawing.Rectangle,Microsoft.DirectX.Direct3D.DrawTextFormat)">
+            <summary>
+            Draws the specified text using the Direct3D font object.
+            </summary>
+            <param name="text">Text to draw.</param>
+            <param name="rect">Rectangle to draw the text in.</param>
+            <param name="format">Text formatting options.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Font2D.Dispose">
+            <summary>
+            Cleanly releases the Direct3D font.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Font2D.RenderText(Microsoft.DirectX.Direct3D.Sprite,System.String,System.Drawing.Rectangle,Microsoft.DirectX.Direct3D.DrawTextFormat)">
+            <summary>
+            Draws the specified text using the Direct3D font object.
+            </summary>
+            <param name="text">Text to draw.</param>
+            <param name="rect">Rectangle to draw the text in.</param>
+            <param name="sprite">Sprite background for the text.</param>
+            <param name="format">Text formatting options.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Font2D.D3DFont">
+            <summary>
+            Gets the Direct3D font object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Font2D.WindowsFont">
+            <summary>
+            Gets the Windows font used.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Font2D.Color">
+            <summary>
+            Gets or sets the color of the text drawn.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DXViewport.Keyboard">
+            <summary>
+            Summary description for Keyboard.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Keyboard.#ctor">
+            <summary>
+            Creates an object for polling the system keyboard.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Keyboard.#ctor(System.Windows.Forms.Form)">
+            <summary>
+            Creates an object for polling the system keyboard.
+            </summary>
+            <param name="window">Window to poll keyboard from.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Keyboard.Dispose">
+            <summary>
+            Disposes of the keyboard device.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Keyboard.Initialize(System.Windows.Forms.Form)">
+            <summary>
+            Initializes the keyboard device to poll from.
+            </summary>
+            <param name="window">Window to poll keyboard from.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Keyboard.Update">
+            <summary>
+            Updates the keyboard device.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Keyboard.Window">
+            <summary>
+            Gets or sets the window to poll keyboard from.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Keyboard.Keys">
+            <summary>
+            Gets the last polled state of the keyboard.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Keyboard.CurrentKeys">
+            <summary>
+            Gets the current state of the keyboard.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Keyboard.Device">
+            <summary>
+            Gets the input device used to grab keyboard information.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Keyboard.Initialized">
+            <summary>
+            Gets whether the input device has been properly initialized.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DXViewport.Mouse">
+            <summary>
+            Summary description for Mouse.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Mouse.#ctor">
+            <summary>
+            Creates an object for polling the system mouse.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Mouse.#ctor(System.Windows.Forms.Form)">
+            <summary>
+            Creates an object for polling the system mouse.
+            </summary>
+            <param name="window">Window to poll mouse from.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Mouse.Dispose">
+            <summary>
+            Disposes of the mouse device.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Mouse.Initialize(System.Windows.Forms.Form)">
+            <summary>
+            Initializes the mouse device to poll from.
+            </summary>
+            <param name="window">Window to poll mouse from.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Mouse.Update">
+            <summary>
+            Updates the mouse device.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Mouse.UpdatePressedButtons">
+            <summary>
+            Updates the state of the which buttons are pressed.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Mouse.Window">
+            <summary>
+            Gets or sets the window to poll mouse from.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Mouse.State">
+            <summary>
+            Gets the last polled state of the mouse.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Mouse.Location">
+            <summary>
+            Gets the last polled location of the mouse.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Mouse.CurrentLocation">
+            <summary>
+            Gets the current polled location of the mouse.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Mouse.Buttons">
+            <summary>
+            Gets the last polled state of the mouse buttons.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Mouse.CurrentButtons">
+            <summary>
+            Gets the current state of the mouse buttons.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Mouse.Device">
+            <summary>
+            Gets the input device used to grab mouse information.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Mouse.Initialized">
+            <summary>
+            Gets whether the input device has been properly initialized.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Mouse.LeftButton">
+            <summary>
+            Gets if the left mouse button is pressed.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Mouse.RightButton">
+            <summary>
+            Gets if the right mouse button is pressed.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DXViewport.QuaternionCamera">
+            <summary>
+            A quaternion-based camera class for DirectX.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DXViewport.QuaternionMovement">
+            <summary>
+            A quaternion-based movement object for DirectX.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionMovement._orientation">
+            <summary>
+            A quaternion for holding orientation information.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionMovement._position">
+            <summary>
+            A vector for holding position data.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionMovement._offset">
+            <summary>
+            A vector for holding offset data.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionMovement._scale">
+            <summary>
+            A vector for holding scale values.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionMovement._followDistance">
+            <summary>
+            A value indicating distance from follow object.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionMovement._velocity">
+            <summary>
+            A vector indicating object velocity.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionMovement._rotationCenter">
+            <summary>
+            A vector indicating the center of the object's rotation.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.#ctor">
+            <summary>
+            Creates an object of type QuaternionMovement.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.Move(System.Single)">
+            <summary>
+            Moves the object along its Look vector.
+            </summary>
+            <param name="distance">Distance by which to move the object.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.Strafe(System.Single)">
+            <summary>
+            Moves the object along its right vector.
+            </summary>
+            <param name="distance">Distance by which to move the object.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.Hover(System.Single)">
+            <summary>
+            Moves the object along its up vector.
+            </summary>
+            <param name="distance">Distance by which to move the object.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.ModelMatrix(Microsoft.DirectX.Matrix)">
+            <summary>
+            Create a Model matrix for the object.
+            </summary>
+            <returns>Model matrix for the object</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.GetAbsoluteRotation">
+            <summary>
+            Get the absolute yaw, pitch, and roll angles of the object.
+            </summary>
+            <returns>A vector containing the three rotations.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.SetAbsoluteRotation(System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the rotation of the object based off of absolute yaw, pitch, and roll angles.
+            </summary>
+            <param name="yaw">Yaw (rotation around Y-axis) of the object.</param>
+            <param name="pitch">Pitch (rotation around X-axis) of the object.</param>
+            <param name="roll">Roll (rotation around Z-axis) of the object.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.RotateYaw(System.Single)">
+            <summary>
+            Rotate the object around its Y-axis (Yaw rotation).
+            </summary>
+            <param name="angle">Angle to rotate by.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.RotatePitch(System.Single)">
+            <summary>
+            Rotate the object around its X-axis (Pitch rotation).
+            </summary>
+            <param name="angle">Angle to rotate by.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.RotateRoll(System.Single)">
+            <summary>
+            Rotate the object around its Z-axis (Roll rotation).
+            </summary>
+            <param name="angle">Angle to rotate by.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.Rotate(System.Single,Microsoft.DirectX.Vector3)">
+            <summary>
+            Rotate the object around the given axis.
+            </summary>
+            <param name="angle">Angle to rotate by.</param>
+            <param name="axis">Axis to rotate around.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.RotateSpherical(System.Single,System.Single,System.Boolean)">
+            <summary>
+            Rotate the object based on spherical coordinates.
+            </summary>
+            <param name="theta">XY-angle to rotate by.</param>
+            <param name="phi">XZ-angle to rotate by.</param>
+            <param name="firstPerson">Whether to do a first- or third-person rotation.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMovement.TransformVector(Microsoft.DirectX.Vector3)">
+            <summary>
+            Transforms the given axis by the object's orientation.
+            </summary>
+            <param name="axis">Axis to transform.</param>
+            <returns>The transformed axis.</returns>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.Orientation">
+            <summary>
+            Gets or sets the quaternion rotation of the object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.Position">
+            <summary>
+            Gets or sets the position of the object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.Offset">
+            <summary>
+            Gets or sets the offset vector of the object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.Scale">
+            <summary>
+            Gets or sets the scaling vector of the object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.FollowDistance">
+            <summary>
+            Gets or sets the distance the object follows its target.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.Velocity">
+            <summary>
+            Gets or sets the current velocity of the object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.RotationCenter">
+            <summary>
+            Gets or sets the point around which the object rotates.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.LookAt">
+            <summary>
+            Gets the LookAt vector of the object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.Origin">
+            <summary>
+            Gets the offset position of the object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.LookVector">
+            <summary>
+            Gets the object's Look vector.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.UpVector">
+            <summary>
+            Gets the object's Up vector.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionMovement.RightVector">
+            <summary>
+            Gets the object's Right vector.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.#ctor">
+            <summary>
+            Creates an object of type QuaternionCamera.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.SetViewParameters(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the viewing parameters for the camera.
+            </summary>
+            <param name="eyePoint">Position of the camera.</param>
+            <param name="lookAtPoint">Target position the camera is looking at.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.SetProjectionParameters(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the projection parameters of the camera.
+            </summary>
+            <param name="fov">Sets the Field-of-View angle for the camera.</param>
+            <param name="aspectRatio">Aspect ratio for the camera.</param>
+            <param name="nearPlane">Near viewing plane.</param>
+            <param name="farPlane">Far viewing plane.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.FrameMove">
+            <summary>
+            Moves the camera based upon time passed since last move.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.Move(System.Drawing.Point)">
+            <summary>
+            Moves the camera based upon the camera's current MovementType.
+            At the default rotation speed, each point in X or Y indicates a single
+            degree of rotation.
+            </summary>
+            <param name="p">Change in x and y (screen coordinates).</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.BeginMove">
+            <summary>
+            Begins a camera move.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.EndMove">
+            <summary>
+            Ends a camera move.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.Rotate(System.Drawing.Point)">
+            <summary>
+            Rotate the camera.
+            </summary>
+            <param name="p">Change in x and y (screen coordinates).</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.Pan(System.Drawing.Point)">
+            <summary>
+            Pan (strafe) the camera.
+            </summary>
+            <param name="p">Change in x and y (screen coordinates).</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.Truck(System.Drawing.Point)">
+            <summary>
+            Truck (zoom) the camera.
+            </summary>
+            <param name="p">Change in x and y (screen coordinates).</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.ResetViewMatrix">
+            <summary>
+            Reset the camera's world/view matrices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.InitializeReset">
+            <summary>
+            Sets the camera's reset position to the current camera parameters.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.ResetCamera">
+            <summary>
+            Resets the camera's position, orientation, and look-at target.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.Dispose">
+            <summary>
+            Safely releases the data within the camera.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionCamera.PickingRay(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns a ray for picking objects relative to the camera's current location.
+            </summary>
+            <param name="x">X-deviation in screen coordinates from the center of the DirectX viewport.</param>
+            <param name="y">Y-deviation in screen coordinates from the center of the DirectX viewport.</param>
+            <param name="windowWidth">The width of the DirectX viewport.</param>
+            <param name="windowHeight">The height of the DirectX viewport.</param>
+            <returns>Picking ray for selecting objects relative to the camera.</returns>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.Projection">
+            <summary>
+            Gets or sets the camera projection matrix
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.View">
+            <summary>
+            Gets or sets the camera view matrix
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.World">
+            <summary>
+            Gets or sets the camera world matrix
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.EnableRotation">
+            <summary>
+            Gets or sets if the camera has rotation enabled.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.EnableMovement">
+            <summary>
+            Gets or sets if the camera has movement enabled.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.FirstPerson">
+            <summary>
+            Gets or sets if the camera is in first-person mode.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.ChaseCam">
+            <summary>
+            Gets or sets if the camera is in chase-cam mode.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.Moving">
+            <summary>
+            Gets or sets if the camera is currently moving.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.CurrentMovement">
+            <summary>
+            Gets or sets the current MovementType of the camera.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.Resetting">
+            <summary>
+            Gets or sets if the camera is currently resetting itself.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.ResetBegan">
+            <summary>
+            Gets when the last camera reset began.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.TimeToReset">
+            <summary>
+            Gets or sets the time it takes the camera to reset.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.ResetTarget">
+            <summary>
+            Gets or sets the camera's reset target position and orientation.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.ResetStartPosition">
+            <summary>
+            Gets the camera's position at the beginning of the last reset.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.RotationSpeed">
+            <summary>
+            Gets or sets the rotation speed of the camera.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.PanSpeed">
+            <summary>
+            Gets or sets the panning (strafing) speed of the camera.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.TruckSpeed">
+            <summary>
+            Gets or sets the trucking (zooming) speed of the camera.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.FieldOfView">
+            <summary>
+            Gets or sets the field of view of the camera.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.AspectRatio">
+            <summary>
+            Gets or sets the aspect ratio of the camera.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.NearPlane">
+            <summary>
+            Gets or sets the near plane of the camera.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.FarPlane">
+            <summary>
+            Gets or sets the far plane of the camera.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.QuaternionCamera.WorldIdentity">
+            <summary>
+            Returns the World identity matrix relative to the camera's offset position.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DXViewport.QuaternionCamera.MovementType">
+            <summary>
+            Describes the current movement type of the camera.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionCamera.MovementType.None">
+            <summary>
+            No movement allowed.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionCamera.MovementType.Pan">
+            <summary>
+            Panning (strafing) movement allowed.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionCamera.MovementType.Rotate">
+            <summary>
+            Rotation movement allowed.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DXViewport.QuaternionCamera.MovementType.Truck">
+            <summary>
+            Trucking (zooming) movement allowed.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DXViewport.QuaternionMath">
+            <summary>
+            Performs common Quaternion math functions.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMath.#ctor">
+            <summary>
+            Creates an object for performing quaternion math.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMath.RotateAxis(System.Single,Microsoft.DirectX.Vector3,Microsoft.DirectX.Quaternion)">
+            <summary>
+            Rotate an orientation around an axis.
+            </summary>
+            <param name="angle">Angle to rotate by.</param>
+            <param name="axis">Axis to rotate around.</param>
+            <param name="orientation">Orientation to rotate.</param>
+            <returns>Final orientation.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.QuaternionMath.TransformVectorByOrientation(Microsoft.DirectX.Vector3,Microsoft.DirectX.Quaternion)">
+            <summary>
+            Transform an axis by an orientation.
+            </summary>
+            <param name="axis">Axis to transform.</param>
+            <param name="orientation">Orientation to transform by.</param>
+            <returns>Transformed axis.</returns>
+        </member>
+        <member name="T:Voyage.Terraingine.DXViewport.Viewport">
+            <summary>
+            A DirectX viewport wrapper.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.#ctor">
+            <summary>
+            Creates a DirectX viewport window.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.#ctor(System.Windows.Forms.Control,System.Windows.Forms.Form)">
+            <summary>
+            Creates a DirectX viewport window.
+            </summary>
+            <param name="window">Window to load DirectX into.</param>
+            <param name="parent">Parent form of the DirectX control.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.Dispose">
+            <summary>
+            Safely releases the data within the viewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.InitializeDXWindow(System.Windows.Forms.Control,System.Windows.Forms.Form)">
+            <summary>
+            Initializes the DirectX window.
+            </summary>
+            <param name="window">Window to load DirectX into.</param>
+            <param name="parent">Parent form of the DirectX control.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.InitializeDevice">
+            <summary>
+            Initialize the DirectX device.
+            </summary>
+            <returns>Whether the initialization succeeded.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.OnDeviceReset(System.Object,System.EventArgs)">
+            <summary>
+            The Direct3D device has been reset; re-initialize information related to
+            DirectX.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.OnDeviceLost(System.Object,System.EventArgs)">
+            <summary>
+            Disposes of data lost when the DirectX device was lost.
+            Note:  Managed index/vertex buffers are unaffected.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.RecoverDevice">
+            <summary>
+            Attemps to recover a lost Direct3D device.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.ReleaseDevice">
+            <summary>
+            Releases the DirectX device.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.IsTimeToRender">
+            <summary>
+            Checks if it is time to render again (based on the Viewport's frames per second).
+            </summary>
+            <returns>Whether rendering should occur.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.BeginRender">
+            <summary>
+            Begins rendering the DirectX scene.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.EndRender">
+            <summary>
+            Ends rendering the DirectX scene.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.InitializeCamera">
+            <summary>
+            Initializes the camera used in the DirectX window.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.UpdateCamera">
+            <summary>
+            Updates the world matrix of the camera.
+            </summary>
+            <returns>World transform of the camera.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.ResetCamera">
+            <summary>
+            Resets the camera projection parameters.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.GetBillboardWorldMatrix">
+            <summary>
+            Sets the world matrix of the DirectX device to create a billboard effect.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.ThrowException(Microsoft.DirectX.DirectXException,System.Boolean)">
+            <summary>
+            Alert the user of a DirectX exception.
+            </summary>
+            <param name="e">Exception thrown.</param>
+            <param name="displayMessageBox">Whether or not to display a message box warning.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DXViewport.Viewport.ResizeWindow">
+            <summary>
+            Resize the DirectX window.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.Device">
+            <summary>
+            Gets the DirectX device.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.Window">
+            <summary>
+            Gets or sets the window DirectX is loaded in.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.ParentWindow">
+            <summary>
+            Gets the parent window of the DirectX control.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.ClearColor">
+            <summary>
+            Gets or sets the background color of the DirectX window.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.FramesPerSecond">
+            <summary>
+            Gets or sets the maximum number of frames rendered per second.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.Camera">
+            <summary>
+            Gets or sets the quaternion camera used by the DirectX window.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.Mouse">
+            <summary>
+            Gets the mouse device as polled by the viewport window.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.Keyboard">
+            <summary>
+            Gets the keyboard device as polled by the viewport window.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.LostDevice">
+            <summary>
+            Gets if the Direct3D device has been lost.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.PresentParameters">
+            <summary>
+            Gets or sets the present parameters used by the device.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.Effects">
+            <summary>
+            Gets or sets the list of DirectX Effects usable in rendering.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.SupportedVertexShaderVersion">
+            <summary>
+            Gets the supported version for Vertex Shaders.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.SupportedPixelShaderVersion">
+            <summary>
+            Gets the supported version for Pixel Shaders.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DXViewport.Viewport.LastRenderTime">
+            <summary>
+            Gets the time at the last rendering from the previous rendering.
+            </summary>
+        </member>
+    </members>
+</doc>

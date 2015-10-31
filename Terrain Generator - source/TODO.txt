@@ -1,0 +1,31 @@
+TODO:
+=====
+
+These are "TODO" items that are more specific; i.e., not the categorical items listed in the Requirements file.
+Also lists errors to be worked out.
+
+
+Version 1 TODO:
+- Add shaders for rendering terrain.
+- Add documentation.
+
+
+Version 2 TODO:
+- DirectX doesn't like my index buffers for vertex rendering?
+- Update vertex quad sizes *during* zoom operations.
+- Add texture masking functionality.
+- Enable user-selected sizes for vertex points (sprites).
+- Set up texture editor.
+- Add proper billboarding to vertex display.  (using a vertex shader)
+- Add DirectX text display.
+- Add screenshot capability.
+-/ Make vertex/index buffers dynamic for TerrainPage rendering.
+
+
+Dropped or Ignored For Now:
+- Why do light normals on some desktops go wrong when vertex selection is disabled?
+- Adjust all terrain selection/movement/etc. to the TerrainPage coordinate space.
+- Dispose of all non-null TerrainPages before assigning to new value.
+- Optimize terrain.
+- Turn edges.
+- Disabling a texture makes the next higher texture use the disabled texture's coordinates. (Discarded due to the fact that "Disable"'ing a texture to be rendered will not render all further texture stages on the device.)

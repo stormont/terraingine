@@ -1,0 +1,320 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{EF0C92E7-89E8-45A2-A3C0-36EB469CF9BB}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Terraingine"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "Voyage.Terraingine"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = "bin\Debug\Terraingine.xml"
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = ".\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX"
+                    AssemblyName = "Microsoft.DirectX"
+                    HintPath = "Libraries\Microsoft\Microsoft.DirectX.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.Direct3D"
+                    AssemblyName = "Microsoft.DirectX.Direct3D"
+                    HintPath = "Libraries\Microsoft\Microsoft.DirectX.Direct3D.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.Direct3DX"
+                    AssemblyName = "Microsoft.DirectX.Direct3DX"
+                    HintPath = "Libraries\Microsoft\Microsoft.DirectX.Direct3DX.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Microsoft.DirectX.DirectInput"
+                    AssemblyName = "Microsoft.DirectX.DirectInput"
+                    HintPath = "Libraries\Microsoft\Microsoft.DirectX.DirectInput.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "DataCore"
+                    Project = "{23C17E9C-EC9C-43F1-9064-807BBEA39255}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "DXViewport"
+                    Project = "{2A96455C-5267-4340-BD2C-4197F35722CA}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "ExportTerrainProject"
+                    AssemblyName = "ExportTerrainProject"
+                    HintPath = "Libraries\Exporting\ExportTerrainProject\bin\Debug\ExportTerrainProject.dll"
+                />
+                <Reference
+                    Name = "ImportTerrainProject"
+                    AssemblyName = "ImportTerrainProject"
+                    HintPath = "Libraries\Importing\ImportTerrainProject\bin\Debug\ImportTerrainProject.dll"
+                />
+                <Reference
+                    Name = "Scripting"
+                    AssemblyName = "Scripting"
+                    HintPath = "Libraries\Core\Scripting\bin\Debug\Scripting.dll"
+                />
+                <Reference
+                    Name = "PlugIn"
+                    Project = "{3A03DBA0-3162-40F2-802A-CC686CAD3DB1}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "DataInterfacing"
+                    Project = "{82A2341F-4D5F-4476-8DE1-F46164A250EA}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "LuaInterface"
+                    AssemblyName = "LuaInterface"
+                    HintPath = "LuaInterface.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "LuaNetInterface"
+                    Project = "{2EE5AE6F-0DD3-4DBB-8415-C182482BF788}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                    Private = "False"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AboutForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AboutForm.resx"
+                    DependentUpon = "AboutForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CameraManipulation.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CameraManipulation.resx"
+                    DependentUpon = "CameraManipulation.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Debugging.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExportSelection.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExportSelection.resx"
+                    DependentUpon = "ExportSelection.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "HistoryManipulation.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "HistoryManipulation.resx"
+                    DependentUpon = "HistoryManipulation.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ImportSelection.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ImportSelection.resx"
+                    DependentUpon = "ImportSelection.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LightManipulation.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LightManipulation.resx"
+                    DependentUpon = "LightManipulation.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LuaScripting.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LuaScripting.resx"
+                    DependentUpon = "LuaScripting.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MainForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MainForm.resx"
+                    DependentUpon = "MainForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NativeMethods.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TerrainCreation.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TerrainCreation.resx"
+                    DependentUpon = "TerrainCreation.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Terraingine.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TerrainViewport.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TerrainViewport.resx"
+                    DependentUpon = "TerrainViewport.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TextureManipulation.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TextureManipulation.resx"
+                    DependentUpon = "TextureManipulation.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "VertexManipulation.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VertexManipulation.resx"
+                    DependentUpon = "VertexManipulation.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

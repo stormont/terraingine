@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Snowfall</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.Snowfall.Driver">
+            <summary>
+            Class for applying a snowfall generator to a TerrainPage.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.Snowfall.Driver.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowfall.Driver.#ctor">
+            <summary>
+            Creates a snowfall generator form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowfall.Driver.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowfall.Driver.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowfall.Driver.CreateSnow(System.Single,System.Single)">
+            <summary>
+            Applies the snowfall generator to the TerrainPage.
+            </summary>
+            <param name="level">The snow level (elevation).</param>
+            <param name="blend">The snow blending distance.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowfall.Driver.btnRun_Click(System.Object,System.EventArgs)">
+            <summary>
+            Runs the snowfall generator.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Snowfall.Driver.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.Snowfall.Driver.TerrainPage">
+            <summary>
+            Gets the TerrainPage used.
+            </summary>
+        </member>
+    </members>
+</doc>

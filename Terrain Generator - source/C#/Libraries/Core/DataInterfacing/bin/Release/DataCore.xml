@@ -1,0 +1,2338 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataCore</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal">
+            <summary>
+            A struct for providing a custom vertex format that provides vertex position and normal information.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.X">
+            <summary>
+            X-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.Y">
+            <summary>
+            Y-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.Z">
+            <summary>
+            Z-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.Nx">
+            <summary>
+            X-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.Ny">
+            <summary>
+            Y-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.Nz">
+            <summary>
+            Z-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.Format">
+            <summary>
+            Format of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.StrideSize">
+            <summary>
+            Stride size of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.numTextures">
+            <summary>
+            Number of textures the vertex can hold.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a vertex with a position and a vertex normal.
+            </summary>
+            <param name="x">X-coordinate for the vertex position.</param>
+            <param name="y">Y-coordinate for the vertex position.</param>
+            <param name="z">Z-coordinate for the vertex position.</param>
+            <param name="nX">X-coordinate for the vertex normal direction.</param>
+            <param name="nY">Y-coordinate for the vertex normal direction.</param>
+            <param name="nZ">Z-coordinate for the vertex normal direction.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.#ctor(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3)">
+            <summary>
+            Creates a vertex with a position and a vertex normal.
+            </summary>
+            <param name="position">Position of the vertex.</param>
+            <param name="normal">Vertex normal direction for the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.SetPosition(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the position of the vertex.
+            </summary>
+            <param name="position">The new position of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.SetNormal(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the normal of the vertex.
+            </summary>
+            <param name="normal">The new normal of the vertex.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.Position">
+            <summary>
+            Gets or sets the position of the vertex.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormal.Normal">
+            <summary>
+            Gets or sets the vertex normal.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1">
+            <summary>
+            A struct for providing a custom vertex format that provides vertex position and normal information.
+            Also contains information for one set of texture coordinates.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.X">
+            <summary>
+            X-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Y">
+            <summary>
+            Y-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Z">
+            <summary>
+            Z-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Nx">
+            <summary>
+            X-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Ny">
+            <summary>
+            Y-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Nz">
+            <summary>
+            Z-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Tu1">
+            <summary>
+            U-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Tv1">
+            <summary>
+            V-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Format">
+            <summary>
+            Format of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.StrideSize">
+            <summary>
+            Stride size of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.numTextures">
+            <summary>
+            Number of textures the vertex can hold.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and one set of texture coordinates.
+            </summary>
+            <param name="x">X-coordinate of the vertex position.</param>
+            <param name="y">Y-coordinate of the vertex position.</param>
+            <param name="z">Z-coordinate of the vertex position.</param>
+            <param name="nX">X-coordinate of the vertex normal direction.</param>
+            <param name="nY">Y-coordinate of the vertex normal direction.</param>
+            <param name="nZ">Z-coordinate of the vertex normal direction.</param>
+            <param name="u">U-coordinate for the first texture.</param>
+            <param name="v">V-coordinate for the first texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.#ctor(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector2)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and one set of texture coordinates.
+            </summary>
+            <param name="position">Position of the vertex.</param>
+            <param name="normal">Vertex normal direction for the vertex.</param>
+            <param name="texCoords">Coordinates for the first texture of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.GetVector2(System.Int32)">
+            <summary>
+            Gets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texture">Texture to get coordinates for.</param>
+            <returns>Texture coordinates for the specified texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.SetTextureCoordinates(Microsoft.DirectX.Vector2,System.Int32)">
+            <summary>
+            Sets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texCoords">Texture coordinates for the texture.</param>
+            <param name="texture">Texture to update.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.SetPosition(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the position of the vertex.
+            </summary>
+            <param name="position">The new position of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.SetNormal(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the normal of the vertex.
+            </summary>
+            <param name="normal">The new normal of the vertex.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Position">
+            <summary>
+            Gets or sets the position of the vertex.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Normal">
+            <summary>
+            Gets or sets the vertex normal.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured1.Vector21">
+            <summary>
+            Gets or sets the texture coordinates for the first texture.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2">
+            <summary>
+            A struct for providing a custom vertex format that provides vertex position and normal information.
+            Also contains information for two sets of texture coordinates.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.X">
+            <summary>
+            X-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Y">
+            <summary>
+            Y-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Z">
+            <summary>
+            Z-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Nx">
+            <summary>
+            X-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Ny">
+            <summary>
+            Y-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Nz">
+            <summary>
+            Z-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Tu1">
+            <summary>
+            U-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Tv1">
+            <summary>
+            V-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Tu2">
+            <summary>
+            U-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Tv2">
+            <summary>
+            V-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Format">
+            <summary>
+            Format of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.StrideSize">
+            <summary>
+            Stride size of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.numTextures">
+            <summary>
+            Number of textures the vertex can hold.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and two sets of texture coordinates.
+            </summary>
+            <param name="x">X-coordinate of the vertex position.</param>
+            <param name="y">Y-coordinate of the vertex position.</param>
+            <param name="z">Z-coordinate of the vertex position.</param>
+            <param name="nX">X-coordinate of the vertex normal direction.</param>
+            <param name="nY">Y-coordinate of the vertex normal direction.</param>
+            <param name="nZ">Z-coordinate of the vertex normal direction.</param>
+            <param name="u1">U-coordinate for the first texture.</param>
+            <param name="v1">V-coordinate for the first texture.</param>
+            <param name="u2">U-coordinate for the second texture.</param>
+            <param name="v2">V-coordinate for the second texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.#ctor(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and two sets of texture coordinates.
+            </summary>
+            <param name="position">Position of the vertex.</param>
+            <param name="normal">Vertex normal direction for the vertex.</param>
+            <param name="texCoords1">Coordinates for the first texture of the vertex.</param>
+            <param name="texCoords2">Coordinates for the second texture of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.GetVector2(System.Int32)">
+            <summary>
+            Gets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texture">Texture to get coordinates for.</param>
+            <returns>Texture coordinates for the specified texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.SetTextureCoordinates(Microsoft.DirectX.Vector2,System.Int32)">
+            <summary>
+            Sets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texCoords">Texture coordinates for the texture.</param>
+            <param name="texture">Texture to update.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.SetPosition(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the position of the vertex.
+            </summary>
+            <param name="position">The new position of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.SetNormal(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the normal of the vertex.
+            </summary>
+            <param name="normal">The new normal of the vertex.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Position">
+            <summary>
+            Gets or sets the position of the vertex.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Normal">
+            <summary>
+            Gets or sets the vertex normal.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Vector21">
+            <summary>
+            Gets or sets the texture coordinates for the first texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured2.Vector22">
+            <summary>
+            Gets or sets the texture coordinates for the second texture.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3">
+            <summary>
+            A struct for providing a custom vertex format that provides vertex position and normal information.
+            Also contains information for three sets of texture coordinates.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.X">
+            <summary>
+            X-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Y">
+            <summary>
+            Y-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Z">
+            <summary>
+            Z-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Nx">
+            <summary>
+            X-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Ny">
+            <summary>
+            Y-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Nz">
+            <summary>
+            Z-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Tu1">
+            <summary>
+            U-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Tv1">
+            <summary>
+            V-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Tu2">
+            <summary>
+            U-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Tv2">
+            <summary>
+            V-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Tu3">
+            <summary>
+            U-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Tv3">
+            <summary>
+            V-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Format">
+            <summary>
+            Format of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.StrideSize">
+            <summary>
+            Stride size of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.numTextures">
+            <summary>
+            Number of textures the vertex can hold.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and three sets of texture coordinates.
+            </summary>
+            <param name="x">X-coordinate of the vertex position.</param>
+            <param name="y">Y-coordinate of the vertex position.</param>
+            <param name="z">Z-coordinate of the vertex position.</param>
+            <param name="nX">X-coordinate of the vertex normal direction.</param>
+            <param name="nY">Y-coordinate of the vertex normal direction.</param>
+            <param name="nZ">Z-coordinate of the vertex normal direction.</param>
+            <param name="u1">U-coordinate for the first texture.</param>
+            <param name="v1">V-coordinate for the first texture.</param>
+            <param name="u2">U-coordinate for the second texture.</param>
+            <param name="v2">V-coordinate for the second texture.</param>
+            <param name="u3">U-coordinate for the third texture.</param>
+            <param name="v3">V-coordinate for the third texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.#ctor(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and three sets of texture coordinates.
+            </summary>
+            <param name="position">Position of the vertex.</param>
+            <param name="normal">Vertex normal direction for the vertex.</param>
+            <param name="texCoords1">Coordinates for the first texture of the vertex.</param>
+            <param name="texCoords2">Coordinates for the second texture of the vertex.</param>
+            <param name="texCoords3">Coordinates for the third texture of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.GetVector2(System.Int32)">
+            <summary>
+            Gets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texture">Texture to get coordinates for.</param>
+            <returns>Texture coordinates for the specified texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.SetTextureCoordinates(Microsoft.DirectX.Vector2,System.Int32)">
+            <summary>
+            Sets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texCoords">Texture coordinates for the texture.</param>
+            <param name="texture">Texture to update.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.SetPosition(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the position of the vertex.
+            </summary>
+            <param name="position">The new position of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.SetNormal(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the normal of the vertex.
+            </summary>
+            <param name="normal">The new normal of the vertex.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Position">
+            <summary>
+            Gets or sets the position of the vertex.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Normal">
+            <summary>
+            Gets or sets the vertex normal.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Vector21">
+            <summary>
+            Gets or sets the texture coordinates for the first texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Vector22">
+            <summary>
+            Gets or sets the texture coordinates for the second texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured3.Vector23">
+            <summary>
+            Gets or sets the texture coordinates for the third texture.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4">
+            <summary>
+            A struct for providing a custom vertex format that provides vertex position and normal information.
+            Also contains information for four sets of texture coordinates.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.X">
+            <summary>
+            X-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Y">
+            <summary>
+            Y-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Z">
+            <summary>
+            Z-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Nx">
+            <summary>
+            X-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Ny">
+            <summary>
+            Y-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Nz">
+            <summary>
+            Z-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Tu1">
+            <summary>
+            U-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Tv1">
+            <summary>
+            V-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Tu2">
+            <summary>
+            U-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Tv2">
+            <summary>
+            V-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Tu3">
+            <summary>
+            U-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Tv3">
+            <summary>
+            V-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Tu4">
+            <summary>
+            U-coordinate of the fourth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Tv4">
+            <summary>
+            V-coordinate of the fourth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Format">
+            <summary>
+            Format of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.StrideSize">
+            <summary>
+            Stride size of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.numTextures">
+            <summary>
+            Number of textures the vertex can hold.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and four sets of texture coordinates.
+            </summary>
+            <param name="x">X-coordinate of the vertex position.</param>
+            <param name="y">Y-coordinate of the vertex position.</param>
+            <param name="z">Z-coordinate of the vertex position.</param>
+            <param name="nX">X-coordinate of the vertex normal direction.</param>
+            <param name="nY">Y-coordinate of the vertex normal direction.</param>
+            <param name="nZ">Z-coordinate of the vertex normal direction.</param>
+            <param name="u1">U-coordinate for the first texture.</param>
+            <param name="v1">V-coordinate for the first texture.</param>
+            <param name="u2">U-coordinate for the second texture.</param>
+            <param name="v2">V-coordinate for the second texture.</param>
+            <param name="u3">U-coordinate for the third texture.</param>
+            <param name="v3">V-coordinate for the third texture.</param>
+            <param name="u4">U-coordinate for the fourth texture.</param>
+            <param name="v4">V-coordinate for the fourth texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.#ctor(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and four sets of texture coordinates.
+            </summary>
+            <param name="position">Position of the vertex.</param>
+            <param name="normal">Vertex normal direction for the vertex.</param>
+            <param name="texCoords1">Coordinates for the first texture of the vertex.</param>
+            <param name="texCoords2">Coordinates for the second texture of the vertex.</param>
+            <param name="texCoords3">Coordinates for the third texture of the vertex.</param>
+            <param name="texCoords4">Coordinates for the fourth texture of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.GetVector2(System.Int32)">
+            <summary>
+            Gets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texture">Texture to get coordinates for.</param>
+            <returns>Texture coordinates for the specified texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.SetTextureCoordinates(Microsoft.DirectX.Vector2,System.Int32)">
+            <summary>
+            Sets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texCoords">Texture coordinates for the texture.</param>
+            <param name="texture">Texture to update.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.SetPosition(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the position of the vertex.
+            </summary>
+            <param name="position">The new position of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.SetNormal(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the normal of the vertex.
+            </summary>
+            <param name="normal">The new normal of the vertex.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Position">
+            <summary>
+            Gets or sets the position of the vertex.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Normal">
+            <summary>
+            Gets or sets the vertex normal.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Vector21">
+            <summary>
+            Gets or sets the texture coordinates for the first texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Vector22">
+            <summary>
+            Gets or sets the texture coordinates for the second texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Vector23">
+            <summary>
+            Gets or sets the texture coordinates for the third texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured4.Vector24">
+            <summary>
+            Gets or sets the texture coordinates for the fourth texture.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5">
+            <summary>
+            A struct for providing a custom vertex format that provides vertex position and normal information.
+            Also contains information for five sets of texture coordinates.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.X">
+            <summary>
+            X-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Y">
+            <summary>
+            Y-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Z">
+            <summary>
+            Z-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Nx">
+            <summary>
+            X-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Ny">
+            <summary>
+            Y-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Nz">
+            <summary>
+            Z-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Tu1">
+            <summary>
+            U-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Tv1">
+            <summary>
+            V-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Tu2">
+            <summary>
+            U-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Tv2">
+            <summary>
+            V-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Tu3">
+            <summary>
+            U-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Tv3">
+            <summary>
+            V-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Tu4">
+            <summary>
+            U-coordinate of the fourth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Tv4">
+            <summary>
+            V-coordinate of the fourth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Tu5">
+            <summary>
+            U-coordinate of the fifth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Tv5">
+            <summary>
+            V-coordinate of the fifth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Format">
+            <summary>
+            Format of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.StrideSize">
+            <summary>
+            Stride size of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.numTextures">
+            <summary>
+            Number of textures the vertex can hold.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and five sets of texture coordinates.
+            </summary>
+            <param name="x">X-coordinate of the vertex position.</param>
+            <param name="y">Y-coordinate of the vertex position.</param>
+            <param name="z">Z-coordinate of the vertex position.</param>
+            <param name="nX">X-coordinate of the vertex normal direction.</param>
+            <param name="nY">Y-coordinate of the vertex normal direction.</param>
+            <param name="nZ">Z-coordinate of the vertex normal direction.</param>
+            <param name="u1">U-coordinate for the first texture.</param>
+            <param name="v1">V-coordinate for the first texture.</param>
+            <param name="u2">U-coordinate for the second texture.</param>
+            <param name="v2">V-coordinate for the second texture.</param>
+            <param name="u3">U-coordinate for the third texture.</param>
+            <param name="v3">V-coordinate for the third texture.</param>
+            <param name="u4">U-coordinate for the fourth texture.</param>
+            <param name="v4">V-coordinate for the fourth texture.</param>
+            <param name="u5">U-coordinate for the fifth texture.</param>
+            <param name="v5">V-coordinate for the fifth texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.#ctor(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and five sets of texture coordinates.
+            </summary>
+            <param name="position">Position of the vertex.</param>
+            <param name="normal">Vertex normal direction for the vertex.</param>
+            <param name="texCoords1">Coordinates for the first texture of the vertex.</param>
+            <param name="texCoords2">Coordinates for the second texture of the vertex.</param>
+            <param name="texCoords3">Coordinates for the third texture of the vertex.</param>
+            <param name="texCoords4">Coordinates for the fourth texture of the vertex.</param>
+            <param name="texCoords5">Coordinates for the fifth texture of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.GetVector2(System.Int32)">
+            <summary>
+            Gets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texture">Texture to get coordinates for.</param>
+            <returns>Texture coordinates for the specified texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.SetTextureCoordinates(Microsoft.DirectX.Vector2,System.Int32)">
+            <summary>
+            Sets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texCoords">Texture coordinates for the texture.</param>
+            <param name="texture">Texture to update.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.SetPosition(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the position of the vertex.
+            </summary>
+            <param name="position">The new position of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.SetNormal(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the normal of the vertex.
+            </summary>
+            <param name="normal">The new normal of the vertex.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Position">
+            <summary>
+            Gets or sets the position of the vertex.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Normal">
+            <summary>
+            Gets or sets the vertex normal.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Vector21">
+            <summary>
+            Gets or sets the texture coordinates for the first texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Vector22">
+            <summary>
+            Gets or sets the texture coordinates for the second texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Vector23">
+            <summary>
+            Gets or sets the texture coordinates for the third texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Vector24">
+            <summary>
+            Gets or sets the texture coordinates for the fourth texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured5.Vector25">
+            <summary>
+            Gets or sets the texture coordinates for the fifth texture.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6">
+            <summary>
+            A struct for providing a custom vertex format that provides vertex position and normal information.
+            Also contains information for six sets of texture coordinates.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.X">
+            <summary>
+            X-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Y">
+            <summary>
+            Y-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Z">
+            <summary>
+            Z-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Nx">
+            <summary>
+            X-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Ny">
+            <summary>
+            Y-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Nz">
+            <summary>
+            Z-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tu1">
+            <summary>
+            U-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tv1">
+            <summary>
+            V-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tu2">
+            <summary>
+            U-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tv2">
+            <summary>
+            V-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tu3">
+            <summary>
+            U-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tv3">
+            <summary>
+            V-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tu4">
+            <summary>
+            U-coordinate of the fourth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tv4">
+            <summary>
+            V-coordinate of the fourth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tu5">
+            <summary>
+            U-coordinate of the fifth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tv5">
+            <summary>
+            V-coordinate of the fifth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tu6">
+            <summary>
+            U-coordinate of the sixth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Tv6">
+            <summary>
+            V-coordinate of the sixth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Format">
+            <summary>
+            Format of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.StrideSize">
+            <summary>
+            Stride size of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.numTextures">
+            <summary>
+            Number of textures the vertex can hold.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and six sets of texture coordinates.
+            </summary>
+            <param name="x">X-coordinate of the vertex position.</param>
+            <param name="y">Y-coordinate of the vertex position.</param>
+            <param name="z">Z-coordinate of the vertex position.</param>
+            <param name="nX">X-coordinate of the vertex normal direction.</param>
+            <param name="nY">Y-coordinate of the vertex normal direction.</param>
+            <param name="nZ">Z-coordinate of the vertex normal direction.</param>
+            <param name="u1">U-coordinate for the first texture.</param>
+            <param name="v1">V-coordinate for the first texture.</param>
+            <param name="u2">U-coordinate for the second texture.</param>
+            <param name="v2">V-coordinate for the second texture.</param>
+            <param name="u3">U-coordinate for the third texture.</param>
+            <param name="v3">V-coordinate for the third texture.</param>
+            <param name="u4">U-coordinate for the fourth texture.</param>
+            <param name="v4">V-coordinate for the fourth texture.</param>
+            <param name="u5">U-coordinate for the fifth texture.</param>
+            <param name="v5">V-coordinate for the fifth texture.</param>
+            <param name="u6">U-coordinate for the sixth texture.</param>
+            <param name="v6">V-coordinate for the sixth texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.#ctor(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and six sets of texture coordinates.
+            </summary>
+            <param name="position">Position of the vertex.</param>
+            <param name="normal">Vertex normal direction for the vertex.</param>
+            <param name="texCoords1">Coordinates for the first texture of the vertex.</param>
+            <param name="texCoords2">Coordinates for the second texture of the vertex.</param>
+            <param name="texCoords3">Coordinates for the third texture of the vertex.</param>
+            <param name="texCoords4">Coordinates for the fourth texture of the vertex.</param>
+            <param name="texCoords5">Coordinates for the fifth texture of the vertex.</param>
+            <param name="texCoords6">Coordinates for the sixth texture of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.GetVector2(System.Int32)">
+            <summary>
+            Gets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texture">Texture to get coordinates for.</param>
+            <returns>Texture coordinates for the specified texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.SetTextureCoordinates(Microsoft.DirectX.Vector2,System.Int32)">
+            <summary>
+            Sets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texCoords">Texture coordinates for the texture.</param>
+            <param name="texture">Texture to update.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.SetPosition(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the position of the vertex.
+            </summary>
+            <param name="position">The new position of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.SetNormal(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the normal of the vertex.
+            </summary>
+            <param name="normal">The new normal of the vertex.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Position">
+            <summary>
+            Gets or sets the position of the vertex.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Normal">
+            <summary>
+            Gets or sets the vertex normal.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Vector21">
+            <summary>
+            Gets or sets the texture coordinates for the first texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Vector22">
+            <summary>
+            Gets or sets the texture coordinates for the second texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Vector23">
+            <summary>
+            Gets or sets the texture coordinates for the third texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Vector24">
+            <summary>
+            Gets or sets the texture coordinates for the fourth texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Vector25">
+            <summary>
+            Gets or sets the texture coordinates for the fifth texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured6.Vector26">
+            <summary>
+            Gets or sets the texture coordinates for the sixth texture.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7">
+            <summary>
+            A struct for providing a custom vertex format that provides vertex position and normal information.
+            Also contains information for seven sets of texture coordinates.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.X">
+            <summary>
+            X-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Y">
+            <summary>
+            Y-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Z">
+            <summary>
+            Z-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Nx">
+            <summary>
+            X-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Ny">
+            <summary>
+            Y-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Nz">
+            <summary>
+            Z-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tu1">
+            <summary>
+            U-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tv1">
+            <summary>
+            V-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tu2">
+            <summary>
+            U-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tv2">
+            <summary>
+            V-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tu3">
+            <summary>
+            U-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tv3">
+            <summary>
+            V-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tu4">
+            <summary>
+            U-coordinate of the fourth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tv4">
+            <summary>
+            V-coordinate of the fourth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tu5">
+            <summary>
+            U-coordinate of the fifth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tv5">
+            <summary>
+            V-coordinate of the fifth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tu6">
+            <summary>
+            U-coordinate of the sixth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tv6">
+            <summary>
+            V-coordinate of the sixth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tu7">
+            <summary>
+            U-coordinate of the seventh texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Tv7">
+            <summary>
+            V-coordinate of the seventh texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Format">
+            <summary>
+            Format of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.StrideSize">
+            <summary>
+            Stride size of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.numTextures">
+            <summary>
+            Number of textures the vertex can hold.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and seven sets of texture coordinates.
+            </summary>
+            <param name="x">X-coordinate of the vertex position.</param>
+            <param name="y">Y-coordinate of the vertex position.</param>
+            <param name="z">Z-coordinate of the vertex position.</param>
+            <param name="nX">X-coordinate of the vertex normal direction.</param>
+            <param name="nY">Y-coordinate of the vertex normal direction.</param>
+            <param name="nZ">Z-coordinate of the vertex normal direction.</param>
+            <param name="u1">U-coordinate for the first texture.</param>
+            <param name="v1">V-coordinate for the first texture.</param>
+            <param name="u2">U-coordinate for the second texture.</param>
+            <param name="v2">V-coordinate for the second texture.</param>
+            <param name="u3">U-coordinate for the third texture.</param>
+            <param name="v3">V-coordinate for the third texture.</param>
+            <param name="u4">U-coordinate for the fourth texture.</param>
+            <param name="v4">V-coordinate for the fourth texture.</param>
+            <param name="u5">U-coordinate for the fifth texture.</param>
+            <param name="v5">V-coordinate for the fifth texture.</param>
+            <param name="u6">U-coordinate for the sixth texture.</param>
+            <param name="v6">V-coordinate for the sixth texture.</param>
+            <param name="u7">U-coordinate for the seventh texture.</param>
+            <param name="v7">V-coordinate for the seventh texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.#ctor(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and seven sets of texture coordinates.
+            </summary>
+            <param name="position">Position of the vertex.</param>
+            <param name="normal">Vertex normal direction for the vertex.</param>
+            <param name="texCoords1">Coordinates for the first texture of the vertex.</param>
+            <param name="texCoords2">Coordinates for the second texture of the vertex.</param>
+            <param name="texCoords3">Coordinates for the third texture of the vertex.</param>
+            <param name="texCoords4">Coordinates for the fourth texture of the vertex.</param>
+            <param name="texCoords5">Coordinates for the fifth texture of the vertex.</param>
+            <param name="texCoords6">Coordinates for the sixth texture of the vertex.</param>
+            <param name="texCoords7">Coordinates for the seventh texture of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.GetVector2(System.Int32)">
+            <summary>
+            Gets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texture">Texture to get coordinates for.</param>
+            <returns>Texture coordinates for the specified texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.SetTextureCoordinates(Microsoft.DirectX.Vector2,System.Int32)">
+            <summary>
+            Sets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texCoords">Texture coordinates for the texture.</param>
+            <param name="texture">Texture to update.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.SetPosition(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the position of the vertex.
+            </summary>
+            <param name="position">The new position of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.SetNormal(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the normal of the vertex.
+            </summary>
+            <param name="normal">The new normal of the vertex.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Position">
+            <summary>
+            Gets or sets the position of the vertex.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Normal">
+            <summary>
+            Gets or sets the vertex normal.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Vector21">
+            <summary>
+            Gets or sets the texture coordinates for the first texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Vector22">
+            <summary>
+            Gets or sets the texture coordinates for the second texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Vector23">
+            <summary>
+            Gets or sets the texture coordinates for the third texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Vector24">
+            <summary>
+            Gets or sets the texture coordinates for the fourth texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Vector25">
+            <summary>
+            Gets or sets the texture coordinates for the fifth texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Vector26">
+            <summary>
+            Gets or sets the texture coordinates for the sixth texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured7.Vector27">
+            <summary>
+            Gets or sets the texture coordinates for the seventh texture.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8">
+            <summary>
+            A struct for providing a custom vertex format that provides vertex position and normal information.
+            Also contains information for eight sets of texture coordinates.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.X">
+            <summary>
+            X-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Y">
+            <summary>
+            Y-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Z">
+            <summary>
+            Z-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Nx">
+            <summary>
+            X-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Ny">
+            <summary>
+            Y-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Nz">
+            <summary>
+            Z-coordinate of the vertex normal.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tu1">
+            <summary>
+            U-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tv1">
+            <summary>
+            V-coordinate of the first texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tu2">
+            <summary>
+            U-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tv2">
+            <summary>
+            V-coordinate of the second texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tu3">
+            <summary>
+            U-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tv3">
+            <summary>
+            V-coordinate of the third texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tu4">
+            <summary>
+            U-coordinate of the fourth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tv4">
+            <summary>
+            V-coordinate of the fourth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tu5">
+            <summary>
+            U-coordinate of the fifth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tv5">
+            <summary>
+            V-coordinate of the fifth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tu6">
+            <summary>
+            U-coordinate of the sixth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tv6">
+            <summary>
+            V-coordinate of the sixth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tu7">
+            <summary>
+            U-coordinate of the seventh texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tv7">
+            <summary>
+            V-coordinate of the seventh texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tu8">
+            <summary>
+            U-coordinate of the eighth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Tv8">
+            <summary>
+            V-coordinate of the eighth texture.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Format">
+            <summary>
+            Format of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.StrideSize">
+            <summary>
+            Stride size of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.numTextures">
+            <summary>
+            Number of textures the vertex can hold.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and eight sets of texture coordinates.
+            </summary>
+            <param name="x">X-coordinate of the vertex position.</param>
+            <param name="y">Y-coordinate of the vertex position.</param>
+            <param name="z">Z-coordinate of the vertex position.</param>
+            <param name="nX">X-coordinate of the vertex normal direction.</param>
+            <param name="nY">Y-coordinate of the vertex normal direction.</param>
+            <param name="nZ">Z-coordinate of the vertex normal direction.</param>
+            <param name="u1">U-coordinate for the first texture.</param>
+            <param name="v1">V-coordinate for the first texture.</param>
+            <param name="u2">U-coordinate for the second texture.</param>
+            <param name="v2">V-coordinate for the second texture.</param>
+            <param name="u3">U-coordinate for the third texture.</param>
+            <param name="v3">V-coordinate for the third texture.</param>
+            <param name="u4">U-coordinate for the fourth texture.</param>
+            <param name="v4">V-coordinate for the fourth texture.</param>
+            <param name="u5">U-coordinate for the fifth texture.</param>
+            <param name="v5">V-coordinate for the fifth texture.</param>
+            <param name="u6">U-coordinate for the sixth texture.</param>
+            <param name="v6">V-coordinate for the sixth texture.</param>
+            <param name="u7">U-coordinate for the seventh texture.</param>
+            <param name="v7">V-coordinate for the seventh texture.</param>
+            <param name="u8">U-coordinate for the eighth texture.</param>
+            <param name="v8">V-coordinate for the eighth texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.#ctor(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2)">
+            <summary>
+            Creates a vertex with a position, a vertex normal, and eight sets of texture coordinates.
+            </summary>
+            <param name="position">Position of the vertex.</param>
+            <param name="normal">Vertex normal direction for the vertex.</param>
+            <param name="texCoords1">Coordinates for the first texture of the vertex.</param>
+            <param name="texCoords2">Coordinates for the second texture of the vertex.</param>
+            <param name="texCoords3">Coordinates for the third texture of the vertex.</param>
+            <param name="texCoords4">Coordinates for the fourth texture of the vertex.</param>
+            <param name="texCoords5">Coordinates for the fifth texture of the vertex.</param>
+            <param name="texCoords6">Coordinates for the sixth texture of the vertex.</param>
+            <param name="texCoords7">Coordinates for the seventh texture of the vertex.</param>
+            <param name="texCoords8">Coordinates for the eigtht texture of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.GetVector2(System.Int32)">
+            <summary>
+            Gets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texture">Texture to get coordinates for.</param>
+            <returns>Texture coordinates for the specified texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.SetTextureCoordinates(Microsoft.DirectX.Vector2,System.Int32)">
+            <summary>
+            Sets the texture coordinates for the specified texture.
+            </summary>
+            <param name="texCoords">Texture coordinates for the texture.</param>
+            <param name="texture">Texture to update.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.SetPosition(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the position of the vertex.
+            </summary>
+            <param name="position">The new position of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.SetNormal(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the normal of the vertex.
+            </summary>
+            <param name="normal">The new normal of the vertex.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Position">
+            <summary>
+            Gets or sets the position of the vertex.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Normal">
+            <summary>
+            Gets or sets the vertex normal.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Vector21">
+            <summary>
+            Gets or sets the texture coordinates for the first texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Vector22">
+            <summary>
+            Gets or sets the texture coordinates for the second texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Vector23">
+            <summary>
+            Gets or sets the texture coordinates for the third texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Vector24">
+            <summary>
+            Gets or sets the texture coordinates for the fourth texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Vector25">
+            <summary>
+            Gets or sets the texture coordinates for the fifth texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Vector26">
+            <summary>
+            Gets or sets the texture coordinates for the sixth texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Vector27">
+            <summary>
+            Gets or sets the texture coordinates for the seventh texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionNormalTextured8.Vector28">
+            <summary>
+            Gets or sets the texture coordinates for the eighth texture.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly">
+            <summary>
+            A struct for providing a custom vertex format that contains only position information.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly.X">
+            <summary>
+            X-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly.Y">
+            <summary>
+            Y-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly.Z">
+            <summary>
+            Z-coordinate of the vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly.Format">
+            <summary>
+            Format of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly.StrideSize">
+            <summary>
+            Stride size of the Direct3D vertex.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly.numTextures">
+            <summary>
+            Number of textures the vertex can hold.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a vertex with a position attribute.
+            </summary>
+            <param name="x">X-coordinate of the vertex position.</param>
+            <param name="y">Y-coordinate of the vertex position.</param>
+            <param name="z">Z-coordinate of the vertex position.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly.#ctor(Microsoft.DirectX.Vector3)">
+            <summary>
+            Creates a vertex with a position attribute.
+            </summary>
+            <param name="position">3D coordinates for the vertex position.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly.SetPosition(Microsoft.DirectX.Vector3)">
+            <summary>
+            Sets the position of the vertex.
+            </summary>
+            <param name="position">The new position of the vertex.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.VertexFormats.PositionOnly.Position">
+            <summary>
+            Gets or sets the position of the vertex.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.TerrainPage">
+            <summary>
+            World data for a piece of terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.#ctor">
+            <summary>
+            Initialize a TerrainPage object.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.#ctor(Voyage.Terraingine.DataCore.TerrainPage)">
+            <summary>
+            Creates a member-wise copy of the specified TerrainPage.
+            </summary>
+            <param name="page">The TerrainPage to copy.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.Dispose">
+            <summary>
+            Safely release the data held in the TerrainPage object.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.ResetData">
+            <summary>
+            Reset the data in the TerrainPage (not including the TerrainPatch).
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.TerrainModelMatrix">
+            <summary>
+            Gets the model matrix for the TerrainPage.
+            </summary>
+            <returns>The model matrix for the TerrainPage.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.SelectVertex(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,System.Boolean,System.Boolean)">
+            <summary>
+            Selects the nearest vertex to the picking ray.
+            </summary>
+            <param name="ray">Picking ray used to select a vertex.</param>
+            <param name="origin">Origin of the picking ray.</param>
+            <param name="endSelection">Whether to enable clearing selected vertices if one is not selected.</param>
+            <param name="multiSelect">Whether to allow selection of multiple vertices.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.SelectVertex(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Selects the specified vertex.
+            </summary>
+            <param name="index">Index of the vertex.</param>
+            <param name="endSelection">Whether to enable clearing selected vertices if one is not selected.</param>
+            <param name="multiSelect">Whether to allow selection of multiple vertices.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.GetNearestVertexNormal(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3)">
+            <summary>
+            Gets the normal of the nearest vertex to the intersecting ray.
+            </summary>
+            <param name="ray">The intersecting ray.</param>
+            <param name="point">The point from which to draw the ray.</param>
+            <returns>The normal of the nearest vertex.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.GetIntersectNormal(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,System.Single)">
+            <summary>
+            Gets the normal of the triangle where the ray intersects the terrain.
+            </summary>
+            <param name="ray">The intersecting ray.</param>
+            <param name="point">The point from which to draw the ray.</param>
+            <param name="threshold">The distance threshold under which to get the nearest vertex normal.</param>
+            <returns>The normal of the intersected triangle.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.MoveSelectedVertices(System.Single)">
+            <summary>
+            Moves the selected vertices in the TerrainPage.
+            </summary>
+            <param name="distChange">The distance to move the selected vertices.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.MoveSelectedVertices(System.Boolean,System.Single,System.Boolean,System.Single)">
+            <summary>
+            Moves the selected vertices in the TerrainPage.
+            </summary>
+            <param name="enableSoftSelection">Whether to use soft selection.</param>
+            <param name="distChange">The distance to move the selected vertices.</param>
+            <param name="useFalloff">Whether to use falloff in blending the vertices.</param>
+            <param name="softDistSquared">The squared soft selection term.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.MoveSoftSelection(System.Single,System.Boolean,System.Single)">
+            <summary>
+            Moves the vertices selected using soft selection.
+            </summary>
+            <param name="distChange">The distance to move the selected vertices.</param>
+            <param name="useFalloff">Whether to use falloff in blending the vertices.</param>
+            <param name="softDistSquared">The squared soft selection term.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.SetSelectedVerticesHeight(System.Boolean,System.Single)">
+            <summary>
+            Moves the selected vertices in the TerrainPage.  Does not affect soft-selected vertices.
+            </summary>
+            <param name="enableSoftSelection">Whether to use soft selection.</param>
+            <param name="height">The height to set the selected vertices to.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.GetPlane(Microsoft.DirectX.Vector2,System.Int32@,System.Int32@,System.Int32@,Microsoft.DirectX.Vector3@)">
+            <summary>
+            Gets the plane on the terrain (defined by three points,
+            with the fourth point as the 2D point elevated onto the plane) the given point is in.
+            </summary>
+            <param name="point">The point in the terrain.</param>
+            <param name="v1">The first vertex in the plane.</param>
+            <param name="v2">The second vertex in the plane.</param>
+            <param name="v3">The third vertex in the plane.</param>
+            <param name="point3d">The 3D elevated point in the terrain.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.GetPlane(Microsoft.DirectX.Vector3,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            Gets the plane on the terrain (defined by three points) the given point is in.
+            </summary>
+            <param name="point">The point in the terrain.</param>
+            <param name="v1">The first vertex in the plane.</param>
+            <param name="v2">The second vertex in the plane.</param>
+            <param name="v3">The third vertex in the plane.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPage.GetPlane(System.Single,System.Single,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            Gets the vertices that make up the plane at the specified point in the terrain.
+            </summary>
+            <param name="xPos">The X-coordinate in the terrain from which to find the plane.</param>
+            <param name="zPos">The Z-coordinate in the terrain from which to find the plane.</param>
+            <param name="v1">The first vertex of the plane.</param>
+            <param name="v2">The second vertex of the plane.</param>
+            <param name="v3">The third vertex of the plane.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPage.Name">
+            <summary>
+            Accesses the name of the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPage.Position">
+            <summary>
+            Get the local position of the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPage.Rotation">
+            <summary>
+            Get the local rotation of the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPage.Renderable">
+            <summary>
+            Is the TerrainPage renderable?
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPage.TerrainPatch">
+            <summary>
+            Get the TerrainPatch of the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPage.Scale">
+            <summary>
+            Gets or sets the scale of the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPage.MaximumVertexHeight">
+            <summary>
+            Gets or sets the maximum vertex height for the TerrainPatch.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.TerrainPatch">
+            <summary>
+            Vertex, index, and material data for a piece of terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.#ctor">
+            <summary>
+            Initialize a TerrainPatch object.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.#ctor(Voyage.Terraingine.DataCore.TerrainPatch)">
+            <summary>
+            Creates a member-wise copy of the specified TerrainPatch.
+            </summary>
+            <param name="patch">The TerrainPatch to copy.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.Dispose">
+            <summary>
+            Safely release the data held in the TerrainPatch object.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.CreatePatch(System.Int32,System.Int32)">
+            <summary>
+            Create a new TerrainPatch.
+            Rows and columns specify the number of vertices in the given directions.
+            Scale indicates the size of the patch.
+            </summary>
+            <param name="rows">Number of rows to create.</param>
+            <param name="columns">Number of columns to create.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.CreatePatch(System.Int32,System.Int32,System.Single,System.Single)">
+            <summary>
+            Create a new TerrainPatch.
+            Rows and columns specify the number of vertices in the given directions.
+            Scale indicates the size of the patch.
+            </summary>
+            <param name="rows">Number of rows to create.</param>
+            <param name="columns">Number of columns to create.</param>
+            <param name="xScale">Distance from the first column to the last.</param>
+            <param name="yScale">Distance from the first row to the last.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.ResetData">
+            <summary>
+            Reset the data in the TerrainPage (not including the TerrainPatch).
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.UpdateTerrainDimensions(System.Single,System.Single)">
+            <summary>
+            Updates the current dimensions of the existing TerrainPatch.
+            </summary>
+            <param name="xScale">Distance from the first column to the last.</param>
+            <param name="yScale">Distance from the first row to the last.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.MarkChangedVertex(System.Int32)">
+            <summary>
+            Indicates that the specified index has been changed and should be updated in the
+            top-level program.
+            </summary>
+            <param name="index">Index to update.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.MarkAllChangedVertices">
+            <summary>
+            Marks all vertices as changed.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.ResetChangedVertices">
+            <summary>
+            Resets all changed vertices to an "unchanged" setting.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.SelectVertex(System.Int32)">
+            <summary>
+            Marks the specified vertex as selected.
+            </summary>
+            <param name="index">The index to select.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.RemoveSelectedVertex(System.Int32)">
+            <summary>
+            Removes the marking of a selected vertex.
+            </summary>
+            <param name="index">The index to un-select.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.ResetSelectedVertices">
+            <summary>
+            Marks all vertices as unselected.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.GetSelectedVertexPositions">
+            <summary>
+            Gets a list of the selected vertex positions.
+            </summary>
+            <returns>The list of selected vertex positions.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.GetSelectedVertexIndices">
+            <summary>
+            Gets the indices of the selected vertices.
+            </summary>
+            <returns>The list of selected vertex indices.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.FindShortestDistanceToSelectedVertex(Microsoft.DirectX.Vector3)">
+            <summary>
+            Finds the shortest distance from the specified position on the TerrainPatch to the nearest
+            selected vertex.
+            </summary>
+            <param name="position">Position to find shortest distance from.</param>
+            <returns>The shortest distance to the nearest selected vertex.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.FindNearestVertex(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3)">
+            <summary>
+            Finds the nearest vertex to the picking ray.
+            </summary>
+            <param name="ray">Picking ray used to select a vertex.</param>
+            <param name="origin">Origin of the picking ray.</param>
+            <returns>The index of the nearest vertex.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.AddTexture(Voyage.Terraingine.DataCore.Texture)">
+            <summary>
+            Adds a texture to the list of textures used by the TerrainPatch.
+            </summary>
+            <param name="tex">The Texture to add to the TerrainPatch.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.AddBlankTexture">
+            <summary>
+            Adds a blank texture to the list of textures used by the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.RemoveTexture">
+            <summary>
+            Removes the currently selected Texture from the list of textures used by the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.RemoveTexture(System.Int32)">
+            <summary>
+            Removes the specified Texture from the list of textures used by the TerrainPatch.
+            </summary>
+            <param name="index">The index of the Texture to remove.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.GetTexture">
+            <summary>
+            Returns the currently selected Texture from the list of textures used by the TerrainPatch.
+            </summary>
+            <returns>The indicated texture returned (null if an invalid index is specified).</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.GetTexture(System.Int32)">
+            <summary>
+            Returns the specified Texture from the list of textures used by the TerrainPatch.
+            </summary>
+            <param name="index">The index of the Texture to return.</param>
+            <returns>The indicated texture returned (null if an invalid index is specified).</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.SetTexture(Voyage.Terraingine.DataCore.Texture)">
+            <summary>
+            Sets the currently selected Texture from the list of textures used by the TerrainPatch.
+            </summary>
+            <param name="tex">The texture to store in the TerrainPatch.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.SetTexture(System.Int32)">
+            <summary>
+            Sets the index of the currently selected Texture used by the TerrainPatch.
+            </summary>
+            <param name="index">The index of the Texture to select</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.AddTextureCoordinates">
+            <summary>
+            Adds a list of texture coordinates to the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.SetTextureCoordinates">
+            <summary>
+            Scales and shifts the texture coordinates for the currently selected texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.SetTextureCoordinates(System.Int32)">
+            <summary>
+            Scales and shifts the texture coordinates for the specified texture.
+            </summary>
+            <param name="index">Texture to update coordinates for.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.GetTextureCoordinateList">
+            <summary>
+            Gets the texture coordinates for the currently selected texture.
+            </summary>
+            <returns>Coordinates for the texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.GetTextureCoordinateList(System.Int32)">
+            <summary>
+            Gets the texture coordinates for the specified texture.
+            </summary>
+            <param name="index">Index of the texture to get coordinates for.</param>
+            <returns>Coordinates for the texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.SetTextureCoordinateList(Microsoft.DirectX.Vector2[])">
+            <summary>
+            Sets the texture coordinates for the currently selected texture.
+            </summary>
+            <param name="texCoords">Texture coordinates to set in the texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.SetTextureCoordinateList(System.Int32,Microsoft.DirectX.Vector2[])">
+            <summary>
+            Sets the texture coordinates for the specified texture.
+            </summary>
+            <param name="index">Index of the texture to set coordinates for.</param>
+            <param name="texCoords">Texture coordinates to set in the texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.NumFaces">
+            <summary>
+            Returns the number of triangle faces in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.CalculateNormals">
+            <summary>
+            Calculates the vertex normals for each TerrainPatch vertex.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.GetPointOnPlane(System.Int32,System.Int32,System.Int32,Microsoft.DirectX.Vector2)">
+            <summary>
+            Gets the specified XZ-point elevated to the height of the plane.
+            </summary>
+            <param name="v1">The first vertex to build the plane from.</param>
+            <param name="v2">The second vertex to build the plane from.</param>
+            <param name="v3">The third vertex to build the plane from.</param>
+            <param name="origin">The point to elevate onto the plane.</param>
+            <returns>The origin point elevated up to the height of the plane.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.GetPointNormal(System.Int32,System.Int32,System.Int32,Microsoft.DirectX.Vector3)">
+            <summary>
+            Gets the normal on the given plane from the given point. If the given point is on a vertex,
+            the normal returned will be the weighted vertex normal, rather than the plane normal.
+            </summary>
+            <param name="v1">The first vertex to build the plane from.</param>
+            <param name="v2">The second vertex to build the plane from.</param>
+            <param name="v3">The third vertex to build the plane from.</param>
+            <param name="origin">The point to get the normal on the plane from.</param>
+            <returns>The normal of the plane from the point.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.TerrainPatch.GetVertexIndex(Microsoft.DirectX.Vector3)">
+            <summary>
+            Gets the index for the vertex at the specified position.
+            </summary>
+            <param name="position">The position to get the index from.</param>
+            <returns>The index for the vertex at the specified position.</returns>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.Rows">
+            <summary>
+            Gets the number of vertex rows in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.Columns">
+            <summary>
+            Gets the number of vertex columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.NumVertices">
+            <summary>
+            Gets the number of vertices in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.NumIndices">
+            <summary>
+            Gets the number of indices in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.NumTextures">
+            <summary>
+            Gets the number of textures in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.Vertices">
+            <summary>
+            Gets the vertices in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.Indices">
+            <summary>
+            Gets the indices in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.Textures">
+            <summary>
+            Gets the textures used in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.TextureCoordinates">
+            <summary>
+            Gets the texture coordinates used in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.RefreshBuffers">
+            <summary>
+            Do visual buffers in a DirectX viewport need to be refreshed?
+            (Caused by data being updated in the TerrainPatch.)
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.RefreshVertices">
+            <summary>
+            Do visual buffers for vertex rendering in a DirectX viewport need to be refreshed?
+            (Caused by data being updated in the TerrainPatch.)
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.ChangedVertices">
+            <summary>
+            Gets whether each individual vertex has been changed.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.SelectedVertices">
+            <summary>
+            Gets or sets the selected vertices of the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.NearestVertices">
+            <summary>
+            Gets the smallest distance between vertices.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.Height">
+            <summary>
+            Gets the height of the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.Width">
+            <summary>
+            Gets the width of the TerrainPatch.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.AreVerticesSelected">
+            <summary>
+            Gets or sets if any vertices have been selected.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.NumSelectedVertices">
+            <summary>
+            Gets the number of selected vertices.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.NumChangedVertices">
+            <summary>
+            Gets the number of vertices that need to be updated.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.SelectedTextureIndex">
+            <summary>
+            Gets or sets the index of the selected texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.SelectedTexture">
+            <summary>
+            Gets or sets the data of the selected texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.RowHeight">
+            <summary>
+            Gets the height of each row.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.TerrainPatch.ColumnWidth">
+            <summary>
+            Gets the width of each column.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.Texture">
+            <summary>
+            An object for storing texture data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.Texture.#ctor">
+            <summary>
+            Creates a DirectX texture object.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.Texture.#ctor(Microsoft.DirectX.Direct3D.Texture,System.String)">
+            <summary>
+            Creates a DirectX texture object.
+            </summary>
+            <param name="tex">Texture to contain in the object.</param>
+            <param name="filename">Filename to the original texture file.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.Texture.#ctor(Voyage.Terraingine.DataCore.Texture)">
+            <summary>
+            Creates a copy of a Texture object.
+            </summary>
+            <param name="tex">Texture object to copy.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.Texture.Dispose">
+            <summary>
+            Safely disposes of the texture data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.Texture.Initialize">
+            <summary>
+            Initializes the additional information in the texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.Texture.GetImage">
+            <summary>
+            Gets the texture bitmap image data used by the texture.
+            </summary>
+            <returns>The bitmap used by the texture.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.Texture.SetImage(Microsoft.DirectX.Direct3D.Device,System.Drawing.Bitmap,Microsoft.DirectX.Direct3D.Usage,Microsoft.DirectX.Direct3D.Pool)">
+            <summary>
+            Loads the specified image into the texture.
+            </summary>
+            <param name="device">The DirectX device to load the texture into.</param>
+            <param name="image">The image to load.</param>
+            <param name="usage">The Direct3D Usage parameter for the image.</param>
+            <param name="pool">The Direct3D Pool parameter for the image.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.Texture.DXTexture">
+            <summary>
+            Gets or sets the DirectX texture object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.Texture.Name">
+            <summary>
+            Gets or sets the name of the texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.Texture.FileName">
+            <summary>
+            Gets or sets the filename of the texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.Texture.Mask">
+            <summary>
+            Gets or sets if the texture is used as a masking texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.Texture.Render">
+            <summary>
+            Gets or sets if the texture is to be rendered.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.Texture.Shift">
+            <summary>
+            Gets or sets the texture shift.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.Texture.Scale">
+            <summary>
+            Gets or sets the texture scale.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.Texture.Operation">
+            <summary>
+            Gets the texture blending operation used by the texture.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataCore.Texture.OperationText">
+            <summary>
+            Gets or sets the text associated with the DirectX TextureOperation
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataCore.VectorMath">
+            <summary>
+            Object for performing mathematical computations.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VectorMath.#ctor">
+            <summary>
+            Creates an object of type VectorMath.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VectorMath.Distance_PointToLine(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3)">
+            <summary>
+            Gets the shortest distance between the given point and the given line.
+            </summary>
+            <param name="ray">Ray to build the line from.</param>
+            <param name="origin">Origin point to build the line from.</param>
+            <param name="point">Point to compare the distance from.</param>
+            <returns>The shortest distance from the point.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VectorMath.GetPlaneNormal(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3)">
+            <summary>
+            Get the normal vector to a plane created by three points.
+            </summary>
+            <param name="p1">The first point in the plane.</param>
+            <param name="p2">The second point in the plane.</param>
+            <param name="p3">The third point in the plane.</param>
+            <returns>The unit normal vector to the plane formed by the three points.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VectorMath.GetWeightedPlaneNormal(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3)">
+            <summary>
+            Get the normal vector to a plane created by three points.
+            Normal vectors will be weighted by the size of the triangle formed by the three points.
+            </summary>
+            <param name="p1">The first point in the plane.</param>
+            <param name="p2">The second point in the plane.</param>
+            <param name="p3">The third point in the plane.</param>
+            <returns>The non-unit normal vector to the plane formed by the three points.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VectorMath.GetLineIntersectPlane(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3)">
+            <summary>
+            Gets the intersection point of a line and a plane.
+            </summary>
+            <param name="p1">The first point forming the plane.</param>
+            <param name="p2">The second point forming the plane.</param>
+            <param name="p3">The third point forming the plane.</param>
+            <param name="ray">The ray forming the intersecting line.</param>
+            <param name="origin">The origin point of the intersecting ray.</param>
+            <returns>The intersection point of the line and the plane.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VectorMath.ConvertBasis(Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2,Microsoft.DirectX.Vector2)">
+            <summary>
+            Converts the bases for the specified vector from the basis definition vectors.
+            </summary>
+            <param name="b1">The first basis definition vector.</param>
+            <param name="b2">The second basis definition vector.</param>
+            <param name="w">The vector to convert bases on.</param>
+            <returns>The new basis of the vector.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VectorMath.IsPointInTriangle(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3)">
+            <summary>
+            Checks if the given point is in the specified triangle.
+            </summary>
+            <param name="p1">The first point forming the triangle.</param>
+            <param name="p2">The second point forming the triangle.</param>
+            <param name="p3">The third point forming the triangle.</param>
+            <param name="point">The point to check if it is in the triangle.</param>
+            <returns>Whether the point is in the triangle or not.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataCore.VectorMath.CheckIfSameSide(Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3,Microsoft.DirectX.Vector3)">
+            <summary>
+            Check if both points are on the same side of the line.
+            </summary>
+            <param name="p1">The first point to check.</param>
+            <param name="p2">The second point to check.</param>
+            <param name="a">The line begin point.</param>
+            <param name="b">The line end point</param>
+            <returns>Whether both points are on the same side of the line.</returns>
+        </member>
+    </members>
+</doc>

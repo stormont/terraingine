@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rainfall</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.Rainfall.Driver">
+            <summary>
+            Class for applying a rainfall modifier to a TerrainPage.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.Rainfall.Driver.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Rainfall.Driver.#ctor">
+            <summary>
+            Creates a rainfall modifier form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Rainfall.Driver.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Rainfall.Driver.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Rainfall.Driver.CreateRain(System.Single)">
+            <summary>
+            Applies the rainfall modifier to the TerrainPage.
+            </summary>
+            <param name="amount">The amount of rainfall.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.Rainfall.Driver.ProcessVertex(System.Int32,System.Single[]@)">
+            <summary>
+            Processes the specified vertex.
+            </summary>
+            <param name="vertex">The vertex to process.</param>
+            <param name="rain">The accumulated rain.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.Rainfall.Driver.btnRun_Click(System.Object,System.EventArgs)">
+            <summary>
+            Runs the rainfall modifier.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Rainfall.Driver.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.Rainfall.Driver.TerrainPage">
+            <summary>
+            Gets the TerrainPage used.
+            </summary>
+        </member>
+    </members>
+</doc>

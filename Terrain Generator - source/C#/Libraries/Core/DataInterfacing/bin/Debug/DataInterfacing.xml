@@ -1,0 +1,819 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataInterfacing</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.DataInterfacing.BufferObjects">
+            <summary>
+            A class for building vertex and index buffers for terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.#ctor">
+            <summary>
+            Creates an object for building vertex and index buffers for terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.ClearBuffers">
+            <summary>
+            Clears the buffers used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.RefreshVertexBuffer_Page">
+            <summary>
+            Reloads the VertexBuffer for the TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.RefreshIndexBuffer_Page">
+            <summary>
+            Reloads the IndexBuffer for the TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.BuildVertices_PositionNormal">
+            <summary>
+            Builds the vertex buffer using vertices with position and normal data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.BuildVertices_PositionNormalTextured1">
+            <summary>
+            Builds the vertex buffer using vertices with position, normal, and one set of texture data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.BuildVertices_PositionNormalTextured2">
+            <summary>
+            Builds the vertex buffer using vertices with position, normal, and two sets of texture data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.BuildVertices_PositionNormalTextured3">
+            <summary>
+            Builds the vertex buffer using vertices with position, normal, and three sets of texture data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.BuildVertices_PositionNormalTextured4">
+            <summary>
+            Builds the vertex buffer using vertices with position, normal, and four sets of texture data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.BuildVertices_PositionNormalTextured5">
+            <summary>
+            Builds the vertex buffer using vertices with position, normal, and five sets of texture data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.BuildVertices_PositionNormalTextured6">
+            <summary>
+            Builds the vertex buffer using vertices with position, normal, and six sets of texture data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.BuildVertices_PositionNormalTextured7">
+            <summary>
+            Builds the vertex buffer using vertices with position, normal, and seven sets of texture data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.BuildVertices_PositionNormalTextured8">
+            <summary>
+            Builds the vertex buffer using vertices with position, normal, and eight sets of texture data.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.RefreshVertexBuffer_Vertices">
+            <summary>
+            Reloads the VertexBuffer for the TerrainPage for displaying vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.BufferObjects.RefreshIndexBuffer_Vertices">
+            <summary>
+            Reloads the IndexBuffer for the vertices of the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.TerrainPage">
+            <summary>
+            Gets or sets the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.VertexBuffer">
+            <summary>
+            Gets or sets the VertexBuffer for the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.VertexBuffer_Vertices">
+            <summary>
+            Gets or sets the VertexBuffer for the vertices of the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.VertexBuffer_ColoredByHeight">
+            <summary>
+            Gets or sets the VertexBuffer for the TerrainPage (using shading by vertex height).
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.IndexBuffer">
+            <summary>
+            Gets or sets the IndexBuffer for the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.IndexBuffer_Vertices">
+            <summary>
+            Gets or sets the IndexBuffer for the vertices of the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.IndexBufferSize">
+            <summary>
+            Gets or sets the size of the IndexBuffer.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.VertexBufferSize">
+            <summary>
+            Gets or sets the size of the VertexBuffer.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.IndexBufferSize_Vertices">
+            <summary>
+            Gets or sets the size of the IndexBuffer for vertices.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.VertexBufferSize_Vertices">
+            <summary>
+            Gets or sets the size of the VertexBuffer for vertices.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.MainViewport">
+            <summary>
+            Gets or sets the main viewport DirectX interface.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.ColorByHeight">
+            <summary>
+            Gets or sets if terrain is colored according to vertex height or uses default coloring.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.Falloff">
+            <summary>
+            Gets or sets if soft selection uses falloff.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.OriginalZoomFactor">
+            <summary>
+            Gets or sets the original zoom factor of the camera.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.ShowSelectedVertices">
+            <summary>
+            Gets or sets if the selected vertices are shown.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.SoftSelection">
+            <summary>
+            Gets or sets whether soft selection is enabled.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.SoftSelectionDistanceSquared">
+            <summary>
+            Gets or sets the squared distance for soft selection.
+            (Squared for quicker length comparisons.)
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.BufferObjects.VertexSize">
+            <summary>
+            Gets or sets the base vertex size for rendering.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataInterfacing.DataHistory">
+            <summary>
+            Summary description for DataHistory.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataHistory.#ctor">
+            <summary>
+            Creates an object for storing data history.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataHistory.PushPage(Voyage.Terraingine.DataCore.TerrainPage,System.String)">
+            <summary>
+            Pushes the specified TerrainPage onto the history stack.  If the maximum
+            stack size has been reached, only the latest additions are kept.
+            </summary>
+            <param name="page">The TerrainPage to push onto the history stack.</param>
+            <param name="action">The description for the action causing the TerrainPage change.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataHistory.PopPage">
+            <summary>
+            Pops the last added TerrainPage from the history stack.
+            </summary>
+            <returns>The last added TerrainPage.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataHistory.CopyPageHistory(System.Int32)">
+            <summary>
+            Copies the specified number of the last TerrainPages pushed onto the history stack.
+            </summary>
+            <param name="numLatestPages">The number of TerrainPages to copy.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataHistory.LastPageAction">
+            <summary>
+            Gets the action description of the TerrainPage last added to the history stack.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataHistory.ClearHistory">
+            <summary>
+            Clears the history stacks.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataHistory.MaximumPageHistory">
+            <summary>
+            Gets or sets the maximum size of the TerrainPage history stack.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataHistory.PageHistoryActions">
+            <summary>
+            Gets the descriptive actions for the TerrainPage history stack.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataHistory.PageHistoryCount">
+            <summary>
+            Gets the size of the TerrainPage history stack.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataInterfacing.DataManipulation">
+            <summary>
+            Class for manipulating terrain data in Terraingine.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.#ctor(Voyage.Terraingine.DXViewport.Viewport)">
+            <summary>
+            Creates a DataManipulation object.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.Dispose">
+            <summary>
+            Disposes of all data being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.GetTerrain">
+            <summary>
+            Gets the TerrainPage used.
+            </summary>
+            <returns>The TerrainPage being manipulated.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.SetTerrain(Voyage.Terraingine.DataCore.TerrainPage)">
+            <summary>
+            Sets the TerrainPage used.
+            </summary>
+            <param name="page">The TerrainPage to manipulate.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.CreateTerrain(System.Int32,System.Int32,System.Single,System.Single)">
+            <summary>
+            Creates a TerrainPatch.
+            </summary>
+            <param name="rows">The number of rows in the TerrainPatch.</param>
+            <param name="columns">The number of columns in the TerrainPatch.</param>
+            <param name="height">The total height of the TerrainPatch.</param>
+            <param name="width">The total width of the TerrainPatch.</param>
+            <returns>The created TerrainPage.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.CreateTerrain(System.Int32,System.Int32,System.Single,System.Single,System.String)">
+            <summary>
+            Creates a TerrainPatch.
+            </summary>
+            <param name="rows">The number of rows in the TerrainPatch.</param>
+            <param name="columns">The number of columns in the TerrainPatch.</param>
+            <param name="height">The total height of the TerrainPatch.</param>
+            <param name="width">The total width of the TerrainPatch.</param>
+            <param name="name">The name of the TerrainPage.</param>
+            <returns>The created TerrainPage.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.LoadTerrain(Voyage.Terraingine.DataCore.TerrainPage)">
+            <summary>
+            Loads the specified TerrainPage and refreshes vertex/index buffers.
+            </summary>
+            <param name="page">The TerrainPage to load.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.RefreshAllBuffers">
+            <summary>
+            Refresh all vertex and index buffers.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.RefreshVertexBuffers">
+            <summary>
+            Refresh all vertex buffers.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.RefreshIndexBuffer">
+            <summary>
+            Refreshes the index buffer for the terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.RefreshVertexBuffer_Vertices">
+            <summary>
+            Refresh the vertex buffer for vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.UpdateTerrainDimensions(System.Single,System.Single)">
+            <summary>
+            Updates the height and width of the TerrainPatch.
+            </summary>
+            <param name="height">New height of the TerrainPatch.</param>
+            <param name="width">New width of the TerrainPatch.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.UpdateTerrainSize(System.Int32,System.Int32)">
+            <summary>
+            Updates the number of rows and columns in a TerrainPatch by creating
+            a new version of the TerrainPatch.
+            </summary>
+            <param name="rows">Number of rows in the new TerrainPatch.</param>
+            <param name="columns">Number of columns in the new TerrainPatch.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.UpdateMaximumTerrainHeight(System.Single)">
+            <summary>
+            Updates the maximum allowed vertex height in a TerrainPage.
+            </summary>
+            <param name="height">The maximum allowed vertex height.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.SetVertexHeight(System.Single,System.Boolean)">
+            <summary>
+            Programatically sets the height of the selected vertices to the specified value.
+            </summary>
+            <param name="height">The height to set the vertices to.</param>
+            <param name="saveState">Whether to save the terrain state.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.PasteSelectedVertexPosition(System.Single)">
+            <summary>
+            Pastes copied vertex data onto the currently selected vertex (pastes one vertex only).
+            </summary>
+            <param name="height">The new height of the vertex.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.CopySelectedVertexPosition">
+            <summary>
+            Copies the height of the first of the currently selected vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.SelectVertex(Voyage.Terraingine.DXViewport.Viewport,System.Boolean)">
+            <summary>
+            Selects a vertex in the terrain from the given origin.
+            </summary>
+            <param name="viewport">The viewport to build the picking ray from.</param>
+            <param name="endSelection">Whether to use multiple selection.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.SelectVertex(System.Int32,System.Boolean)">
+            <summary>
+            Selects the specified vertex.
+            </summary>
+            <param name="index">Index of the vertex.</param>
+            <param name="endSelection">Whether to enable clearing selected vertices if one is not selected.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.BuildPickingRay(System.Int32,System.Int32,Voyage.Terraingine.DXViewport.Viewport)">
+            <summary>
+            Builds a picking ray from the viewport camera.
+            </summary>
+            <param name="x">X-position in the viewport.</param>
+            <param name="y">Y-position in the viewport.</param>
+            <param name="viewport">The DirectX viewport to use.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.MoveVertices">
+            <summary>
+            Moves the selected vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.MoveVertices(System.Boolean,System.Single)">
+            <summary>
+            Moves the selected vertices.
+            </summary>
+            <param name="endMovement">Whether to end vertex movement.</param>
+            <param name="distChange">The change in distance to move selected vertices.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.ShiftTexture">
+            <summary>
+            Shifts the currently selected texture by the indicated distance.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.ScaleTexture">
+            <summary>
+            Scales the currently selected texture by the indicated distance.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.EndTextureMovement">
+            <summary>
+            Ends texture movement if any textures have been modified.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.SelectVertexFormat">
+            <summary>
+            Selects the vertex format for rendering that can be handled by the video card.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.RenderTerrain">
+            <summary>
+            Renders the terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.RenderVertices">
+            <summary>
+            Renders the highlighted terrain vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.SetTextureOperation(System.Int32)">
+            <summary>
+            Sets the texture drawing operation for the specified texture state in the DirectX device.
+            </summary>
+            <param name="texture">Texture state to update.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.GetTextureOperation(System.String)">
+            <summary>
+            Gets the Direct3D TextureOperation associated with the specified string.
+            </summary>
+            <param name="operation">String to get the TextureOperation from.</param>
+            <returns>The TextureOperation being used.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.TakeScreenshot(System.String,Microsoft.DirectX.Direct3D.ImageFileFormat)">
+            <summary>
+            Saves the current rendering to a screenshot file.
+            </summary>
+            <param name="filename">The name of the file to create or overwrite.</param>
+            <param name="fileFormat">The image format of the image to create.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.LoadPlugIns">
+            <summary>
+            Loads the plug-ins associated with the application.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.LoadPlugIn(Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes)">
+            <summary>
+            Loads a plug-in of the specified type.
+            </summary>
+            <param name="type">The type of plug-in to load.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.RunPlugIn(System.Int32,Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes,System.Windows.Forms.Form)">
+            <summary>
+            Runs the specified plug-in from the list of plug-ins.
+            </summary>
+            <param name="index">The plug-in to run.</param>
+            <param name="type">The type of plug-in to run.</param>
+            <param name="owner">The Form calling the plug-in.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.RunPlugInAuto(System.Int32,Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes,System.Windows.Forms.Form,System.String)">
+            <summary>
+            Runs the specified plug-in from the list of plug-ins.
+            </summary>
+            <param name="index">The plug-in to run.</param>
+            <param name="type">The type of plug-in to run.</param>
+            <param name="owner">The Form calling the plug-in.</param>
+            <param name="filename">The filename to load into the plug-in.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.LoadDesiredPlugInData(Voyage.Terraingine.PlugIn)">
+            <summary>
+            Loads the plug-in's desired data into the plug-in.
+            </summary>
+            <param name="plugin">The plug-in to load data into.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.StoreCurrentPage(System.String)">
+            <summary>
+            Stores the current TerrainPage in the history stack.
+            </summary>
+            <param name="action">The action description for what caused the change.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.StoreLastPage(Voyage.Terraingine.DataCore.TerrainPage,System.String)">
+            <summary>
+            Stores the specified TerrainPage in the history stack before replacing the it
+            with the new TerrainPage.
+            </summary>
+            <param name="page">The new TerrainPage to manipulate.</param>
+            <param name="action">The action description for what caused the change.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.StoreGenericPage(Voyage.Terraingine.DataCore.TerrainPage,System.String)">
+            <summary>
+            Stores the specified TerrainPage in the history stack.
+            </summary>
+            <param name="page">The new TerrainPage to manipulate.</param>
+            <param name="action">The action description for what caused the change.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.UndoLastPageAction">
+            <summary>
+            Restores the last TerrainPage pushed onto the history stack.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.DataManipulation.RedoLastPageAction">
+            <summary>
+            Restores the last TerrainPage pushed onto the "redo" history stack.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.TerrainPage">
+            <summary>
+            Gets or sets the TerrainPage.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.MainViewport">
+            <summary>
+            Gets the main viewport DirectX interface.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.PlugIns">
+            <summary>
+            Gets the plug-ins used.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.BufferObjects">
+            <summary>
+            Gets or sets the buffer objects used.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.Falloff">
+            <summary>
+            Gets or sets if soft selection uses falloff.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.SoftSelection">
+            <summary>
+            Gets or sets whether soft selection is enabled.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.SoftSelectionDistanceSquared">
+            <summary>
+            Gets or sets the squared distance for soft selection.
+            (Squared for quicker length comparisons.)
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.CameraPickRay">
+            <summary>
+            Gets or sets the camera pick ray used to manipulate the terrain.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.VertexPositionCopy">
+            <summary>
+            Gets or sets the copied vertex position.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.EnableVertexMovement">
+            <summary>
+            Gets or sets whether vertex movement is enabled.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.PauseVertexMovement">
+            <summary>
+            Gets or sets whether vertex movement is paused.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.OriginalZoomFactor">
+            <summary>
+            Gets or sets the original zoom factor of the camera.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.IsMoving">
+            <summary>
+            Gets or sets if the vertices are currently being moved.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.EnableLighting">
+            <summary>
+            Gets or sets if lighting is used in rendering.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.EnableMultipleSelection">
+            <summary>
+            Gets or sets whether multiple selection is enabled.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.RenderTextures">
+            <summary>
+            Gets or sets if textures are rendered.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.DataHistory">
+            <summary>
+            Gets the history stacks for the data interface.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.RedoDataHistory">
+            <summary>
+            Gets the "redo" history stacks for the data interface.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.SupportedVertexShaderVersion">
+            <summary>
+            Gets the supported vertex shader version for the DirectX viewport.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.DataManipulation.SupportedPixelShaderVersion">
+            <summary>
+            Gets the supported vertex shader version for the DirectX viewport.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataInterfacing.PlugIns">
+            <summary>
+            A class for handling plug-ins.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.PlugIns.#ctor">
+            <summary>
+            Creates an object for handling plug-ins.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.PlugIns.LoadPlugIns">
+            <summary>
+            Loads the plug-ins associated with the application.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.PlugIns.LoadPlugInDirectory(System.String,Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes)">
+            <summary>
+            Loads the plug-ins from the specified directory, including sub-directories.
+            </summary>
+            <param name="dir">Directory to load plug-ins from.</param>
+            <param name="type">Type of plug-in to load.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.PlugIns.LoadPlugInsWithinDirectory(System.String,Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes)">
+            <summary>
+            Load the plug-ins from within the specified directory.
+            </summary>
+            <param name="dir">Directory to load plug-ins from.</param>
+            <param name="type">Type of plug-in to load.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.PlugIns.LoadPlugIns(System.Reflection.Assembly)">
+            <summary>
+            Loads a list of valid plug-ins from the specified assembly.
+            </summary>
+            <param name="asm">Assembly to load plug-ins from.</param>
+            <returns>List of valid plug-ins.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.PlugIns.LoadPlugIn(Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes)">
+            <summary>
+            Loads a plug-in of the specified type.
+            </summary>
+            <param name="type">The type of plug-in to load.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.PlugIns.RefreshPlugInList(Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes)">
+            <summary>
+            Refreshes the list of plug-ins of the specified type.
+            </summary>
+            <param name="type">The type of plug-in list to refresh.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.PlugIns.VertexPlugIns">
+            <summary>
+            Gets the collection of vertex-manipulating plug-ins.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.PlugIns.TexturePlugIns">
+            <summary>
+            Gets the collection of texture-manipulating plug-ins.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.PlugIns.FileImportPlugIns">
+            <summary>
+            Gets the collection of file-importing plug-ins.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.PlugIns.FileExportPlugIns">
+            <summary>
+            Gets the collection of file-exporting plug-ins.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes">
+            <summary>
+            Enumeration for different plug-in types.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes.Vertices">
+            <summary>
+            Plug-in type for manipulating vertices.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes.Textures">
+            <summary>
+            Plug-in type for manipulating textures.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes.Importing">
+            <summary>
+            Plug-in type for importing data.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataInterfacing.PlugIns.PlugInTypes.Exporting">
+            <summary>
+            Plug-in type for exporting data.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.DataInterfacing.ViewportInterface">
+            <summary>
+            A UserControl for interfacing with terrain data and rendering the data to a DirectX viewport.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.DataInterfacing.ViewportInterface.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.#ctor">
+            <summary>
+            Creates an interface viewport between the terrain data and DirectX.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.CreateViewport(System.Windows.Forms.Form)">
+            <summary>
+            Creates the viewport interface.
+            </summary>
+            <param name="owner">The form the viewport interface is contained within.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.SetViewportSize(System.Drawing.Size)">
+            <summary>
+            Sets the size of the viewport.
+            </summary>
+            <param name="s">The new size of the viewport.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.InitializeViewport_Default">
+            <summary>
+            Initializes the DXViewport and the DataManipulation classes
+            using default configuration settings.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.InitializeViewport">
+            <summary>
+            Initializes the DXViewport and the DataManipulation classes.
+            Call InitializeDXDefaults() and InitializeCamera() afterwards,
+            or implement their equivalent.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.InitializeDXDefaults">
+            <summary>
+            Sets up additional data members in the form.
+            Call InitializeCamera() afterwards, or implement its equivalent.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.InitializeCamera">
+            <summary>
+            Initializes the camera in the DirectX viewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.OnDeviceReset(System.Object,System.EventArgs)">
+            <summary>
+            Resets application-specific render states when the Direct3D device is reset.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.PreRender">
+            <summary>
+            Performs necessary pre-rendering functions.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.BeginRender">
+            <summary>
+            Renders the DirectX viewport.
+            </summary>
+            <returns>Whether the frame has begun rendering.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.EndRender">
+            <summary>
+            Ends the rendering of the frame.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.RenderSceneElements">
+            <summary>
+            Renders the elements in the scene.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.RenderTerrain">
+            <summary>
+            Renders the terrain used in the main viewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.ViewportInterface_SizeChanged(System.Object,System.EventArgs)">
+            <summary>
+            Automatically updates the new size of the viewport when the size of the UserControl is changed.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.DataInterfacing.ViewportInterface.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.ViewportInterface.Owner">
+            <summary>
+            Gets or sets the Form that contains this control.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.ViewportInterface.DXViewport">
+            <summary>
+            Gets the main viewport DirectX interface.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.ViewportInterface.TerrainData">
+            <summary>
+            Gets or sets the terrain data used by the viewport.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.ViewportInterface.FillMode">
+            <summary>
+            Gets or sets the FillMode used by the DirectX viewport.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.ViewportInterface.CullMode">
+            <summary>
+            Gets or sets the CullMode used by the DirectX viewport.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.DataInterfacing.ViewportInterface.ViewportPanel">
+            <summary>
+            Gets or sets the panel used by the DirectX viewport.
+            </summary>
+        </member>
+    </members>
+</doc>

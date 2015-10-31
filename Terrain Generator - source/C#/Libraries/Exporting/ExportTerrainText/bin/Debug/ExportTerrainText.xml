@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExportTerrainText</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.ExportTerrainText.Driver">
+            <summary>
+            Driver class for the ExportTerrainText plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainText.Driver.#ctor">
+            <summary>
+            Creates the Driver class.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainText.Driver.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainText.Driver.WriteText">
+            <summary>
+            Writes the text data to the chosen file in the SaveFileDialog.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainText.Driver.WriteTerrainPageData(System.IO.StreamWriter@)">
+            <summary>
+            Writes the TerrainPage data to the output stream.
+            </summary>
+            <param name="writer">The output stream to write data to.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainText.Driver.WriteTerrainPatchHeaderData(System.IO.StreamWriter@)">
+            <summary>
+            Writes the TerrainPatch header data to the output stream.
+            </summary>
+            <param name="writer">The output stream to write data to.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainText.Driver.WriteTerrainPatchTextureData(System.IO.StreamWriter@)">
+            <summary>
+            Writes the TerrainPatch texture data to the output stream.
+            </summary>
+            <param name="writer">The output stream to write data to.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainText.Driver.WriteTerrainPatchVertexData(System.IO.StreamWriter@)">
+            <summary>
+            Writes the TerrainPatch vertex data to the output stream.
+            </summary>
+            <param name="writer">The output stream to write data to.</param>
+        </member>
+    </members>
+</doc>

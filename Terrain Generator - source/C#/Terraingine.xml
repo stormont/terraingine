@@ -1,0 +1,2082 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Terraingine</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.AboutForm">
+            <summary>
+            Summary description for AboutForm.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.AboutForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.AboutForm.#ctor">
+            <summary>
+            Creates a form for viewing program information.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.AboutForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.AboutForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.CameraManipulation">
+            <summary>
+            A user control for manipulating the viewport camera.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.#ctor">
+            <summary>
+            Creates a camera manipulation user control.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.Initialize(Voyage.Terraingine.TerrainViewport)">
+            <summary>
+            Initializes the control's data members.
+            </summary>
+            <param name="owner">The TerrainViewport that contains the control.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.toolCamera_ButtonClick(System.Object,System.Windows.Forms.ToolBarButtonClickEventArgs)">
+            <summary>
+            Perform a toolbar click action.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.RotateCamera(System.Boolean,System.Boolean)">
+            <summary>
+            Rotates the camera.
+            </summary>
+            <param name="pushed">Indicates if the button was already active.</param>
+            <param name="toggle">Indicates whether to visually toggle the button.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.PanCamera(System.Boolean,System.Boolean)">
+            <summary>
+            Pans the camera.
+            </summary>
+            <param name="pushed">Indicates if the button was already active.</param>
+            <param name="toggle">Indicates whether to visually toggle the button.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.ZoomCamera(System.Boolean,System.Boolean)">
+            <summary>
+            Zooms the camera.
+            </summary>
+            <param name="pushed">Indicates if the button was already active.</param>
+            <param name="toggle">Indicates whether to visually toggle the button.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.SolidTerrain(System.Boolean,System.Boolean)">
+            <summary>
+            Displays the TerrainPage in solid form.
+            </summary>
+            <param name="pushed">Indicates if the button was already active.</param>
+            <param name="toggle">Indicates whether to visually toggle the button.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.WireframeTerrain(System.Boolean,System.Boolean)">
+            <summary>
+            Displays the TerrainPage in wireframe form.
+            </summary>
+            <param name="pushed">Indicates if the button was already active.</param>
+            <param name="toggle">Indicates whether to visually toggle the button.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.ResetCamera">
+            <summary>
+            Resets the camera position.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.ViewSolidTerrain">
+            <summary>
+            Displays the TerrainPage in solid form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.ViewWireframeTerrain">
+            <summary>
+            Displays the TerrainPage in wireframe form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.DisableCameraMovement">
+            <summary>
+            Disables camera movement.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.IncreaseVertexSize">
+            <summary>
+            Increases the size of the rendered vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.DecreaseVertexSize">
+            <summary>
+            Decreases the size of the rendered vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.CameraManipulation.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.CameraManipulation.EnableDataUpdates">
+            <summary>
+            Gets or sets whether the control allows data updates.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.CameraManipulation.RotatePressed">
+            <summary>
+            Gets if the rotate button is pressed.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.CameraManipulation.PanPressed">
+            <summary>
+            Gets if the pan button is pressed.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.CameraManipulation.ZoomPressed">
+            <summary>
+            Gets if the zoom button is pressed.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.CameraManipulation.SolidPressed">
+            <summary>
+            Gets if the solid button is pressed.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.CameraManipulation.WireframePressed">
+            <summary>
+            Gets if the wireframe button is pressed.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.Debugging">
+            <summary>
+            Class for performing common debugging tasks.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Debugging.#ctor">
+            <summary>
+            Creates an instance of the debugging class.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Debugging.#ctor(System.String,System.Boolean)">
+            <summary>
+            Creates an instance of the debugging class.
+            </summary>
+            <param name="source">Source function creating the Debugging object.</param>
+            <param name="assert">Whether to assert a base value upon creation.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.Debugging.AssertTime">
+            <summary>
+            Asserts the currently held time to the debugging output window.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Debugging.AssertTime(System.DateTime)">
+            <summary>
+            Asserts the specified time to the debugging output window.
+            </summary>
+            <param name="time">Time to assert.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.Debugging.AssertTicks">
+            <summary>
+            Asserts the currently held time ticks to the debugging output window.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Debugging.AssertTicks(System.Int64)">
+            <summary>
+            Asserts the specified number of time ticks to the debugging output window.
+            </summary>
+            <param name="ticks">Number of ticks to assert.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.Debugging.AssertMilliSeconds">
+            <summary>
+            Asserts the currently held milliseconds to the debugging output window.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Debugging.AssertMilliSeconds(System.DateTime)">
+            <summary>
+            Asserts the specified number of milliseconds to the debugging output window.
+            </summary>
+            <param name="time">DateTime to assert.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.Debugging.AssertMessage(System.String)">
+            <summary>
+            Asserts the specified message to the debugging output window.
+            </summary>
+            <param name="message">The message to assert.</param>
+        </member>
+        <member name="P:Voyage.Terraingine.Debugging.Time">
+            <summary>
+            Gets or sets the current time held by the Debugging object.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.Debugging.Source">
+            <summary>
+            Gets or sets the source function holding the Debugging object.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.ExportSelection">
+            <summary>
+            A Form for selected which export method to save terrain with.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.ExportSelection.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportSelection.#ctor">
+            <summary>
+            Creates an export selection form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportSelection.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportSelection.lstMethods_DoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            Selects the double-clicked export method.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportSelection.lstMethods_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Selects an export method and enables the "OK" button.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportSelection.LoadExportNames(System.String[])">
+            <summary>
+            Loads the export methods from which the user will choose from.
+            </summary>
+            <param name="methods">The list of export methods.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportSelection.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.ExportSelection.ExportMethod">
+            <summary>
+            Gets the selected export method.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.HistoryManipulation">
+            <summary>
+            A user control for manipulating terrain history.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.HistoryManipulation.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.#ctor">
+            <summary>
+            Creates a history manipulation user control.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.Initialize(Voyage.Terraingine.TerrainViewport)">
+            <summary>
+            Initializes the control's data members.
+            </summary>
+            <param name="owner">The TerrainViewport that contains the control.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.lstHistory_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Selects a history action from the list.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.lstHistory_DoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            Performs a rollback to the selected history action.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.btnRollback_Click(System.Object,System.EventArgs)">
+            <summary>
+            Rolls back the terrain history to the selected action.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.btnRestore_Click(System.Object,System.EventArgs)">
+            <summary>
+            Restores the terrain history to the selected action.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.btnRestoreAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            Restores all terrain history actions.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.ClearHistory">
+            <summary>
+            Clears the current list of history actions.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.LoadHistoryActions">
+            <summary>
+            Loads the history actions into the list.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.HistoryManipulation.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.ImportSelection">
+            <summary>
+            A Form for selected which import method to load terrain with.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.ImportSelection.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportSelection.#ctor">
+            <summary>
+            Creates an import selection form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportSelection.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportSelection.lstMethods_DoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            Selects the double-clicked import method.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportSelection.lstMethods_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Selects an import method and enables the "OK" button.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportSelection.LoadImportNames(System.String[])">
+            <summary>
+            Loads the import methods from which the user will choose from.
+            </summary>
+            <param name="methods">The list of import methods.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportSelection.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.ImportSelection.ImportMethod">
+            <summary>
+            Gets the selected import method.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.LightManipulation">
+            <summary>
+            A user control for manipulating lighting of terrain.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.LightManipulation.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.#ctor">
+            <summary>
+            Creates a lighting manipulation user control.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.Initialize(Voyage.Terraingine.TerrainViewport)">
+            <summary>
+            Initializes the control's data members.
+            </summary>
+            <param name="owner">The TerrainViewport that contains the control.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.txtLights_PrimaryR_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the red-color element of the primary light.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.txtLights_PrimaryG_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the green-color element of the primary light.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.txtLights_PrimaryB_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the blue-color element of the primary light.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.trkLights_PrimaryR_Scroll(System.Object,System.EventArgs)">
+            <summary>
+            Changes the red-color element of the primary light.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.trkLights_PrimaryG_Scroll(System.Object,System.EventArgs)">
+            <summary>
+            Changes the green-color element of the primary light.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.trkLights_PrimaryB_Scroll(System.Object,System.EventArgs)">
+            <summary>
+            Changes the blue-color element of the primary light.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.numLights_Angle_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the angle of the primary light around the terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.btnLights_DefaultColor_Click(System.Object,System.EventArgs)">
+            <summary>
+            Sets the base color of the terrain to the lighting color.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.btnLights_HeightColor_Click(System.Object,System.EventArgs)">
+            <summary>
+            Sets the base color of the terrain to coloring dependent upon vertex height.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.UpdatePrimaryLightColor">
+            <summary>
+            Updates the primary light color.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.UpdatePrimaryLightAngle">
+            <summary>
+            Updates the direction of the primary light.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.InitializePrimaryLight">
+            <summary>
+            Initializes the primary light controls to the DirectX settings.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.UpdatePrimaryLightColor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Updates the primary light color.
+            </summary>
+            <param name="r">The red tint of the light.</param>
+            <param name="g">The green tint of the light.</param>
+            <param name="b">The blue tint of the light.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.UpdatePrimaryLightAngle(System.Int32)">
+            <summary>
+            Updates the direction of the primary light.
+            </summary>
+            <param name="angle">The angle of the light.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.ColorTerrainByLighting">
+            <summary>
+            Sets the base color of the terrain to the lighting color.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.ColorTerrainByHeight">
+            <summary>
+            Sets the base color of the terrain to coloring dependent upon vertex height.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.GetLightColor">
+            <summary>
+            Gets the color of the lighting.
+            </summary>
+            <returns>The color of the lighting.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.GetLightAngle">
+            <summary>
+            Gets the angle of the lighting.
+            </summary>
+            <returns>The angle of the lighting.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.LightManipulation.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.LightManipulation.EnableDataUpdates">
+            <summary>
+            Gets or sets whether the control allows data updates.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.LuaScripting">
+            <summary>
+            A class for running Lua scripts through a WinForms "console".
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.LuaScripting.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.#ctor(Voyage.Terraingine.MainForm)">
+            <summary>
+            Creates an object for running Lua scripts.
+            </summary>
+            <param name="owner">The owner MainForm of the window.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.btnRun_Click(System.Object,System.EventArgs)">
+            <summary>
+            Runs the entered script.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.btnSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            Saves the entered script.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.btnLoad_Click(System.Object,System.EventArgs)">
+            <summary>
+            Loads a previously saved script.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.LuaScripting_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Removes Lua-registered functions of the class on closing.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.btnHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Displays Lua-registered help function.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.LuaScripting_SizeChanged(System.Object,System.EventArgs)">
+            <summary>
+            Resizes the script toolbar window.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.Help">
+            <summary>
+            Displays available commands to the console.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.Help(System.String)">
+            <summary>
+            Displays information about the specified command to the console.
+            </summary>
+            <param name="command">The command to display information for.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.Print(System.String)">
+            <summary>
+            Displays the specified text strings to the output window.
+            </summary>
+            <param name="text">The text to be displayed.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.DisplayPackageHelp(Voyage.LuaNetInterface.LuaPackageDescriptor)">
+            <summary>
+            Displays help for the LuaPackageDescriptor to the output window.
+            </summary>
+            <param name="package">The package to display help for.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.LuaScripting.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.LuaScripting.LuaVM">
+            <summary>
+            Gets or sets the Lua virtual machine.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.MainForm">
+            <summary>
+            An object for controlling terrain creation and manipulation from a top-level perspective.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.TerrainViewport">
+            <summary>
+            Summary description for TerrainViewport.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.TerrainViewport._viewport">
+            <summary>
+            Viewport used for rendering.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainViewport.#ctor">
+            <summary>
+            Creates a Form of type TerrainViewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainViewport.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainViewport.OnApplicationIdle(System.Object,System.EventArgs)">
+            <summary>
+            Runs further processing when the application is idle.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainViewport.GetFormCenter">
+            <summary>
+            Gets the center point of the form.
+            </summary>
+            <returns>The center of the form.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainViewport.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.TerrainViewport.AppStillIdle">
+            <summary>
+            Gets if the application has any messages left to process.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.TerrainViewport.MainViewport">
+            <summary>
+            Gets the main viewport DirectX interface.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.#ctor">
+            <summary>
+            Creates a Form of type MainForm.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.OnApplicationIdle(System.Object,System.EventArgs)">
+            <summary>
+            Runs further processing when the application is idle.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.MainForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            Sets up additional data members in the form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.SetupLights(System.Object,System.EventArgs)">
+            <summary>
+            Sets up the lights used by the main viewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.SetupLights">
+            <summary>
+            Sets up the lights used by the main viewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.InitializeLua">
+            <summary>
+            Initializes and registers Lua functionality.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.RenderSceneElements">
+            <summary>
+            Renders the elements in the scene.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.DisplayVertexInStatusBar">
+            <summary>
+            Displays the selected vertex position in the status bar.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.UndoTerrainAction">
+            <summary>
+            Updates the form display states based on undo action.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.RedoTerrainAction">
+            <summary>
+            Updates the form display states based on redo action.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.ClearTerrain">
+            <summary>
+            Clears the terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.LoadTerrain(Voyage.Terraingine.DataCore.TerrainPage)">
+            <summary>
+            Loads a TerrainPage into the program.
+            </summary>
+            <param name="page">The TerrainPage to load.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.UpdateStates">
+            <summary>
+            Updates the display states of the program.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.PromptToSave">
+            <summary>
+            Prompts the user to save data.
+            </summary>
+            <returns>The result of the dialog prompt.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_New_Click">
+            <summary>
+            Creates a new TerrainPage for editing.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Open_Click">
+            <summary>
+            Opens an old TerrainPage for editing.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Close_Click">
+            <summary>
+            Closes the current TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Save_Click">
+            <summary>
+            Saves the current TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_SaveAs_Click">
+            <summary>
+            Saves the current TerrainPage with new parameters.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Import_ImportTerrain_Click">
+            <summary>
+            Imports the current terrain using a method chosen by the user.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Import_LoadMethod_Click">
+            <summary>
+            Loads a new plug-in used for importing.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.fileMenu_Export_ExportTerrain_Click">
+            <summary>
+            Exports the current terrain using a method chosen by the user.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Export_LoadMethod_Click">
+            <summary>
+            Loads a new plug-in used for exporting.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Exit_Click">
+            <summary>
+            Exits the program.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuEdit_Undo_Click">
+            <summary>
+            Undoes the last action taken.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuEdit_Redo_Click">
+            <summary>
+            Re-performs the last action taken.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuEdit_Copy_Click">
+            <summary>
+            Copies the currently selected vertex data (copies first selected vertex only).
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuEdit_Paste_Click">
+            <summary>
+            Pastes copied vertex data onto the currently selected vertex (pastes one vertex only).
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_Default_Click">
+            <summary>
+            Resets the camera to the center of the current terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_SelectAll_Click">
+            <summary>
+            Selects all vertices in the TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_SelectInverse_Click">
+            <summary>
+            Selects the non-selected vertices and un-selects currently selected vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_DefaultColor_Click">
+            <summary>
+            Sets the base color of the terrain to the lighting color.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_HeightColor_Click">
+            <summary>
+            Sets the base color of the terrain to coloring dependent upon vertex height.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_SizePlus_Click">
+            <summary>
+            Increases the size of the rendered vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_SizeMinus_Click">
+            <summary>
+            Decreases the size of the rendered vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_ScreenCapture_Click">
+            <summary>
+            Saves the current render frame to a file.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_Script_Click">
+            <summary>
+            Opens a Lua scripting window.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuHelp_Help_Click">
+            <summary>
+            Opens Terraingine help files.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuHelp_About_Click">
+            <summary>
+            Opens a window displaying program information.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Rotate_Click">
+            <summary>
+            Activates camera rotation.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Pan_Click">
+            <summary>
+            Activates camera panning.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Zoom_Click">
+            <summary>
+            Activates camera zooming.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Reset_Click">
+            <summary>
+            Resets the camera position.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Wireframe_Click">
+            <summary>
+            Activates wireframe rendering.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Solid_Click">
+            <summary>
+            Activates solid rendering.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_New_Click(System.Object,System.EventArgs)">
+            <summary>
+            Creates a new TerrainPage for editing.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Open_Click(System.Object,System.EventArgs)">
+            <summary>
+            Opens an old TerrainPage for editing.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Close_Click(System.Object,System.EventArgs)">
+            <summary>
+            Closes the current TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Save_Click(System.Object,System.EventArgs)">
+            <summary>
+            Saves the current TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_SaveAs_Click(System.Object,System.EventArgs)">
+            <summary>
+            Saves the current TerrainPage with new parameters.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Import_ImportTerrain_Click(System.Object,System.EventArgs)">
+            <summary>
+            Imports the current terrain using a method chosen by the user.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Import_LoadMethod_Click(System.Object,System.EventArgs)">
+            <summary>
+            Loads a new plug-in used for importing.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.fileMenu_Export_ExportTerrain_Click(System.Object,System.EventArgs)">
+            <summary>
+            Exports the current terrain using a method chosen by the user.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Export_LoadMethod_Click(System.Object,System.EventArgs)">
+            <summary>
+            Loads a new plug-in used for exporting.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuFile_Exit_Click(System.Object,System.EventArgs)">
+            <summary>
+            Exits the program.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuEdit_Undo_Click(System.Object,System.EventArgs)">
+            <summary>
+            Undoes the last action taken.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuEdit_Redo_Click(System.Object,System.EventArgs)">
+            <summary>
+            Re-performs the last action taken.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuEdit_Copy_Click(System.Object,System.EventArgs)">
+            <summary>
+            Copies the currently selected vertex data (copies first selected vertex only).
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuEdit_Paste_Click(System.Object,System.EventArgs)">
+            <summary>
+            Pastes copied vertex data onto the currently selected vertex (pastes one vertex only).
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_Default_Click(System.Object,System.EventArgs)">
+            <summary>
+            Resets the camera to the center of the current terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_SelectAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            Selects all vertices in the TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_SelectInverse_Click(System.Object,System.EventArgs)">
+            <summary>
+            Selects the non-selected vertices and un-selects currently selected vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_DefaultColor_Click(System.Object,System.EventArgs)">
+            <summary>
+            Sets the base color of the terrain to the lighting color.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_HeightColor_Click(System.Object,System.EventArgs)">
+            <summary>
+            Sets the base color of the terrain to coloring dependent upon vertex height.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_SizePlus_Click(System.Object,System.EventArgs)">
+            <summary>
+            Increases the size of the rendered vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_SizeMinus_Click(System.Object,System.EventArgs)">
+            <summary>
+            Decreases the size of the rendered vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_ScreenCapture_Click(System.Object,System.EventArgs)">
+            <summary>
+            Saves the current render frame to a file.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuView_Script_Click(System.Object,System.EventArgs)">
+            <summary>
+            Opens a Lua scripting window.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuHelp_Help_Click(System.Object,System.EventArgs)">
+            <summary>
+            Opens Terraingine help files.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuHelp_About_Click(System.Object,System.EventArgs)">
+            <summary>
+            Opens a window displaying program information.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Rotate_Click(System.Object,System.EventArgs)">
+            <summary>
+            Activates camera rotation.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Pan_Click(System.Object,System.EventArgs)">
+            <summary>
+            Activates camera panning.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Zoom_Click(System.Object,System.EventArgs)">
+            <summary>
+            Activates camera zooming.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Reset_Click(System.Object,System.EventArgs)">
+            <summary>
+            Resets the camera position.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Wireframe_Click(System.Object,System.EventArgs)">
+            <summary>
+            Activates wireframe rendering.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.menuCamera_Solid_Click(System.Object,System.EventArgs)">
+            <summary>
+            Activates solid rendering.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.tabControls_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Loads terrain history actions when the "History" tab is selected.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.vScrollVertices_Scroll(System.Object,System.Windows.Forms.ScrollEventArgs)">
+            <summary>
+            Updates how much of the vertex manipulation control is shown.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.vScrollTextures_Scroll(System.Object,System.Windows.Forms.ScrollEventArgs)">
+            <summary>
+            Updates how much of the texture manipulation control is shown.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.vScrollHistory_Scroll(System.Object,System.Windows.Forms.ScrollEventArgs)">
+            <summary>
+            Updates how much of the history manipulation control is shown.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.vScrollLights_Scroll(System.Object,System.Windows.Forms.ScrollEventArgs)">
+            <summary>
+            Updates how much of the light manipulation control is shown.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.CreateTerrain(System.Int32,System.Int32,System.Single,System.Single,System.String)">
+            <summary>
+            Creates a piece of terrain with the specified parameters.
+            </summary>
+            <param name="rows">The number of rows in the TerrainPatch.</param>
+            <param name="columns">The number of columns in the TerrainPatch.</param>
+            <param name="height">The total height of the TerrainPatch.</param>
+            <param name="width">The total width of the TerrainPatch.</param>
+            <param name="name">The name of the TerrainPage.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.ImportTerrain(System.String)">
+            <summary>
+            Imports terrain using the specified plug-in.
+            </summary>
+            <param name="name">The name of the plug-in to use.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.ExportTerrain(System.String)">
+            <summary>
+            Exports terrain using the specified plug-in.
+            </summary>
+            <param name="name">The name of the plug-in to use.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.MainForm_SizeChanged(System.Object,System.EventArgs)">
+            <summary>
+            Resizes and repositions the controls within the window when the Form is resized.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.pnlViewport_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Performs mouse processing when the mouse is clicked over the main viewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.pnlViewport_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Performs mouse processing when the mouse is clicked over the main viewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.ViewportPanel_DragEnter(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Displays notification that a drag-and-drop action is occurring.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.ViewportPanel_DragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Opens a drag-and-dropped file.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.ViewportPanel_MouseWheel(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Performs mouse processing when the mouse wheel is scrolled over the main viewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.EnableVertexMovement_Click(System.Object,System.EventArgs)">
+            <summary>
+            Un-toggles camera movement buttons.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.MainForm_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Safely disposes of the DirectX viewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.MainForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.MainForm.DataInterface">
+            <summary>
+            Gets the data interface for the terrain data.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.NativeMethods">
+            <summary>
+            Object for setting up a more efficient render loop.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.NativeMethods.#ctor">
+            <summary>
+            Creates an object of type NativeMethods.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.NativeMethods.PeekMessage(Voyage.Terraingine.NativeMethods.Message@,System.IntPtr,System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            Checks if there are more messages remaining on the message pump.
+            </summary>
+            <returns>Whether another message is on the pump.</returns>
+        </member>
+        <member name="T:Voyage.Terraingine.NativeMethods.Message">
+            <summary>
+            Defines the Message struct for the message pump.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.NativeMethods.Message.hWnd">
+            <summary>
+            Pointer to the window.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.NativeMethods.Message.msg">
+            <summary>
+            Pointer to the message.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.NativeMethods.Message.wParam">
+            <summary>
+            Pointer to the WPARAM object.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.NativeMethods.Message.lParam">
+            <summary>
+            Pointer to the LPARAM object.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.NativeMethods.Message.time">
+            <summary>
+            Time the message is built.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.NativeMethods.Message.p">
+            <summary>
+            Position of the message.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.TerrainCreation">
+            <summary>
+            Summary description for TerrainCreation.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.TerrainCreation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.#ctor">
+            <summary>
+            Creates the TerrainCreation form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.TerrainCreation_Load(System.Object,System.EventArgs)">
+            <summary>
+            Creates the TerrainCreation form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.CreateTerrain(System.Int32,System.Int32,System.Single,System.Single)">
+            <summary>
+            Creates the TerrainPatch of the form.
+            </summary>
+            <param name="rows">The number of rows in the TerrainPatch.</param>
+            <param name="columns">The number of columns in the TerrainPatch.</param>
+            <param name="height">The total height of the TerrainPatch.</param>
+            <param name="width">The total width of the TerrainPatch.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.UpdateTerrain">
+            <summary>
+            Updates the TerrainPatch in the form.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.btnCancel_Click">
+            <summary>
+            Cancels the TerrainPatch creation.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.btnOK_Click">
+            <summary>
+            Updates and accepts the TerrainPatch creation.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            Cancels the TerrainPatch creation.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.btnOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            Updates and accepts the TerrainPatch creation.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.numRows_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Updates the TerrainPage when the control has a changed value.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.numColumns_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Updates the TerrainPage when the control has a changed value.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.numRows_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Updates the TerrainPage when the control loses focus.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.numColumns_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Updates the TerrainPage when the control loses focus.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.chkGridDimensions_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Keeps the rows and columns equal in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.numRowDistance_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Updates the distance between rows in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.numRowDistance_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Updates the distance between rows in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.numColumnDistance_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Updates the distance between columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.numColumnDistance_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Updates the distance between columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.chkGridSize_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Keeps the distances between rows and columns equal in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.TerrainCreation_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Safely disposes of the DirectX viewport.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TerrainCreation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.TerrainCreation.Accepted">
+            <summary>
+            Gets if the OK button has been pressed.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.Terraingine">
+            <summary>
+            Entry class for the program.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Terraingine.#ctor">
+            <summary>
+            Creates a Terraingine object.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.Terraingine.Main">
+            <summary>
+            Entry point for the program.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.TextureManipulation">
+            <summary>
+            A user control for manipulating terrain textures.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.TextureManipulation.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.#ctor">
+            <summary>
+            Creates a texture manipulation user control.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.Initialize(Voyage.Terraingine.TerrainViewport)">
+            <summary>
+            Initializes the control's data members.
+            </summary>
+            <param name="owner">The TerrainViewport that contains the control.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.treeTextures_DragEnter(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Displays notification that a drag-and-drop action is occurring.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.treeTextures_DragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Opens a drag-and-dropped texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.treeTextures_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+            <summary>
+            Changes the selection of the current texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_AddTex_Click(System.Object,System.EventArgs)">
+            <summary>
+            Adds a texture to the TerrainPage.
+            Supports the following file formats: .bmp, .dds, .dib, .hdr, .jpg, .pfm, .png, .ppm, .tga
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_RemoveTex_Click(System.Object,System.EventArgs)">
+            <summary>
+            Removes a texture from the TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_MoveUp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Moves the selected texture up one layer on the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_MoveDown_Click(System.Object,System.EventArgs)">
+            <summary>
+            Moves the selected texture down one layer on the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_Disable_Click(System.Object,System.EventArgs)">
+            <summary>
+            Disables the rendering of the selected texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_DisableAll_Click(System.Object,System.EventArgs)">
+            <summary>
+            Disables the rendering of all textures.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.txtTextures_Name_KeyUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Renames the currently selected texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_Name_Click(System.Object,System.EventArgs)">
+            <summary>
+            Renames the currently selected texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.cmbTextures_Operation_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the texture blending operation for the selected texture when rendering.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.numTextures_uShift_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Shifts the U-coordinates of the current texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.numTextures_uShift_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Shifts the U-coordinates of the current texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.numTextures_vShift_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Shifts the V-coordinates of the current texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.numTextures_vShift_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Shifts the V-coordinates of the current texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.numTextures_uScale_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Scales the U-coordinates of the current texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.numTextures_uScale_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Scales the U-coordinates of the current texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.numTextures_vScale_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Scales the V-coordinates of the current texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.numTextures_vScale_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Scales the V-coordinates of the current texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.lstAlgorithms_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Enables the texture manipulation "Run Algorithm" button if an item is selected.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.lstAlgorithms_DoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            Runs the texture manipulation "Run Algorithm" button if an item is being clicked.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnRunAlgorithm_Click(System.Object,System.EventArgs)">
+            <summary>
+            Runs the selected texture manipulation algorithm.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnLoadAlgorithm_Click(System.Object,System.EventArgs)">
+            <summary>
+            Loads a new texture manipulation plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.treeTextures_AfterSelect">
+            <summary>
+            Changes the selection of the current texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_AddTex_Click">
+            <summary>
+            Adds a texture to the TerrainPage.
+            Supports the following file formats: .bmp, .dds, .dib, .hdr, .jpg, .pfm, .png, .ppm, .tga
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_RemoveTex_Click">
+            <summary>
+            Removes a texture from the TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_MoveUp_Click">
+            <summary>
+            Moves the selected texture up one layer on the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_MoveDown_Click">
+            <summary>
+            Moves the selected texture down one layer on the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_Disable_Click">
+            <summary>
+            Disables the rendering of the selected texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_DisableAll_Click">
+            <summary>
+            Disables the rendering of all textures.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.LoadTexture(System.String)">
+            <summary>
+            Loads a texture file into the TerrainPage.
+            </summary>
+            <param name="filename">Filename of the texture to load.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.RemoveTexture">
+            <summary>
+            Removes the current texture from the TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.MoveTextureUp">
+            <summary>
+            Moves the current texture up one layer on the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.MoveTextureDown">
+            <summary>
+            Moves the current texture down one layer on the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.DisableTexture">
+            <summary>
+            Disables the current texture in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.EnableAllTextures(System.Boolean)">
+            <summary>
+            Enables or disables the rendering of all textures.
+            </summary>
+            <param name="enable">Whether to enable or disable texture rendering.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnTextures_Name_Click">
+            <summary>
+            Renames the currently selected texture.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.SetTextureName(System.String)">
+            <summary>
+            Renames the specified texture.
+            </summary>
+            <param name="name">The new name of the texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.cmbTextures_Operation_SelectedIndexChanged">
+            <summary>
+            Changes the texture blending operation for the selected texture when rendering.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.SetTextureOperation(System.String)">
+            <summary>
+            Changes the texture blending operation for the specified texture when rendering.
+            </summary>
+            <param name="operation">The name of the operation to set.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.HasOperation(System.String)">
+            <summary>
+            Checks if the list of operations contains the specified operation.
+            </summary>
+            <param name="name">The name of the operation to search for.</param>
+            <returns>Whether the operation was found.</returns>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.ShiftValuesChanged(System.Boolean)">
+            <summary>
+            Shifts the selected texture by the amount indicated by the numeric spinners.
+            </summary>
+            <param name="endTextureMovement">Whether to end texture movement.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.ScaleValuesChanged(System.Boolean)">
+            <summary>
+            Scales the selected texture by the amount indicated by the numeric spinners.
+            </summary>
+            <param name="endTextureMovement">Whether to end texture movement.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.ShiftValuesChanged">
+            <summary>
+            Shifts the selected texture by the amount indicated by the numeric spinners.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.ScaleValuesChanged">
+            <summary>
+            Scales the selected texture by the amount indicated by the numeric spinners.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.SetTextureScale(System.Single,System.Single)">
+            <summary>
+            Sets the scaling values for the current texture.
+            </summary>
+            <param name="uScale">The new U-scale for the texture.</param>
+            <param name="vScale">The new V-scale for the texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.SetTextureShift(System.Single,System.Single)">
+            <summary>
+            Sets the shift values for the current texture.
+            </summary>
+            <param name="uShift">The new U-shift for the texture.</param>
+            <param name="vShift">The new V-shift for the texture.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.lstAlgorithms_SelectedIndexChanged">
+            <summary>
+            Enables the texture manipulation "Run Algorithm" button if an item is selected.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.lstAlgorithms_DoubleClick">
+            <summary>
+            Runs the texture manipulation "Run Algorithm" button if an item is being clicked.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnRunAlgorithm_Click">
+            <summary>
+            Runs the selected texture manipulation algorithm.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.btnLoadAlgorithm_Click">
+            <summary>
+            Loads a new texture manipulation plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.LoadAlgorithms">
+            <summary>
+            Loads the list of texture manipulation algorithms.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.RunAlgorithm(System.String)">
+            <summary>
+            Runs the texture manipulation plug-in specified.
+            </summary>
+            <param name="name">The name of the plug-in to run.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.RunAutoAlgorithm(System.String,System.String)">
+            <summary>
+            Runs the texture manipulation plug-in specified in automatic mode.
+            </summary>
+            <param name="name">The name of the plug-in to run.</param>
+            <param name="filename">The name of the file to load into the plug-in.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.LoadAlgorithm">
+            <summary>
+            Loads a new texture manipulation plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.LoadTextures">
+            <summary>
+            Loads the textures of the TerrainPage into the Textures tab control.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.SetTextureSelectedState(System.Int32)">
+            <summary>
+            Sets window states for selecting a new texture.
+            </summary>
+            <param name="index">The texture being selected.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.SelectTexture(System.Int32)">
+            <summary>
+            Selects a texture from the TerrainPage.
+            </summary>
+            <param name="index">The index of the texture to select.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.SelectTexture(System.String)">
+            <summary>
+            Selects a texture from the TerrainPage.
+            </summary>
+            <param name="name">The name of the texture to select.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.TextureManipulation.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.TextureManipulation.EnableDataUpdates">
+            <summary>
+            Gets or sets whether the control allows data updates.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.VertexManipulation">
+            <summary>
+            A user control for manipulating terrain vertices.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.VertexManipulation.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.#ctor">
+            <summary>
+            Creates a vertex manipulation user control.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.Initialize(Voyage.Terraingine.TerrainViewport)">
+            <summary>
+            Initializes the control's data members.
+            </summary>
+            <param name="owner">The TerrainViewport that contains the control.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.RestoreDefaults">
+            <summary>
+            Sets all control displays to their default values.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.btnVertices_Create_Click(System.Object,System.EventArgs)">
+            <summary>
+            Creates a piece of terrain.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.txtVertices_Name_KeyUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Updates the name of the current TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.btnVertices_Name_Click(System.Object,System.EventArgs)">
+            <summary>
+            Updates the name of the current TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.btnVertexSelection_Click(System.Object,System.EventArgs)">
+            <summary>
+            Enables or disables vertex selection.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.radSingle_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Disables soft selection.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.radSoft_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Enables soft selection.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numSoft_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Updates the soft selection distance.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.chkFalloff_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Updates whether soft selection uses falloff.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertexHeight_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the height of the selected vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertexHeight_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Changes the height of the selected vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.lstVertices_Algorithms_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Enables the vertex manipulation "Run Algorithm" button if an item is selected.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.lstVertices_Algorithms_DoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            Runs the vertex manipulation "Run Algorithm" button if an item is being clicked.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.btnVertices_RunAlgorithm_Click(System.Object,System.EventArgs)">
+            <summary>
+            Runs the selected vertex manipulation algorithm.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.btnVertices_LoadAlgorithm_Click(System.Object,System.EventArgs)">
+            <summary>
+            Loads a new vertex manipulation plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_Rows_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Changes the number of rows in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_Rows_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the number of rows in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_Columns_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Changes the number of columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_Columns_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the number of columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.chkVertices_GridDimensions_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes whether the number of rows and the number of columns in the TerrainPatch must be equal.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_ColumnDistance_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the distance between columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_ColumnDistance_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Changes the distance between columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_RowDistance_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the distance between columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_RowDistance_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Changes the distance between columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.chkVertices_GridSize_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes whether the distance between rows and the distance between columns
+            in the TerrainPatch must be equal.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numMaxHeight_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Changes the maximum vertex height of the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numMaxHeight_Leave(System.Object,System.EventArgs)">
+            <summary>
+            Changes the maximum vertex height of the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.CreateTerrainDialog">
+            <summary>
+            Creates a piece of terrain using the TerrainCreation dialog.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.LoadTerrain(System.String)">
+            <summary>
+            Loads a TerrainPage into the program.
+            </summary>
+            <param name="name">The name of the TerrainPage.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.UpdateTerrainName">
+            <summary>
+            Updates the name of the current TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.btnVertexSelection_Click(System.Boolean)">
+            <summary>
+            Enables or disables vertex selection.
+            </summary>
+            <param name="enable">Whether to enable vertex selection.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numSoft_ValueChanged">
+            <summary>
+            Updates the soft selection distance.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.chkFalloff_CheckedChanged">
+            <summary>
+            Updates whether soft selection uses falloff.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertexHeight_ValueChanged">
+            <summary>
+            Changes the height of the selected vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.EnableSoftSelection(System.Boolean)">
+            <summary>
+            Enables or disables soft selection.
+            </summary>
+            <param name="enable">Whether to enable soft selection.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.EnableVertexSelection(System.Boolean)">
+            <summary>
+            Enables or disables vertex selection.
+            </summary>
+            <param name="enable">Whether to enable vertex selection.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.lstVertices_Algorithms_SelectedIndexChanged">
+            <summary>
+            Enables the vertex manipulation "Run Algorithm" button if an item is selected.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.lstVertices_Algorithms_DoubleClick">
+            <summary>
+            Runs the vertex manipulation "Run Algorithm" button if an item is being clicked.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.btnVertices_RunAlgorithm_Click">
+            <summary>
+            Runs the selected vertex manipulation algorithm.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.LoadAlgorithms">
+            <summary>
+            Loads the list of vertex manipulation algorithms.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.RunAlgorithm(System.String)">
+            <summary>
+            Runs the vertex manipulation plug-in specified.
+            </summary>
+            <param name="name">The name of the plug-in to run.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.RunAutoAlgorithm(System.String,System.String)">
+            <summary>
+            Runs the vertex manipulation plug-in specified in automatic mode.
+            </summary>
+            <param name="name">The name of the plug-in to run.</param>
+            <param name="filename">The name of the file to load into the plug-in.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.LoadAlgorithm">
+            <summary>
+            Loads a new vertex manipulation plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_Rows_ValueChanged">
+            <summary>
+            Changes the number of rows in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_Columns_ValueChanged">
+            <summary>
+            Changes the number of columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.chkVertices_GridDimensions_CheckedChanged">
+            <summary>
+            Changes whether the number of rows and the number of columns in the TerrainPatch must be equal.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_ColumnDistance_Leave">
+            <summary>
+            Changes the distance between columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numVertices_RowDistance_Leave">
+            <summary>
+            Changes the distance between columns in the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.chkVertices_GridSize_CheckedChanged">
+            <summary>
+            Changes whether the distance between rows and the distance between columns
+            in the TerrainPatch must be equal.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.numMaxHeight_ValueChanged">
+            <summary>
+            Changes the maximum vertex height of the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.UpdateMaximumVertexHeight">
+            <summary>
+            Activates the Maximum Vertex Height numeric.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.UpdateMaximumVertexHeight(System.Single)">
+            <summary>
+            Updates the maximum allowed vertex height in a TerrainPage.
+            </summary>
+            <param name="height">The maximum allowed vertex height.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.ChangeGridSize">
+            <summary>
+            Changes the size of the TerrainPatch grid.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.ChangeGridDimensions">
+            <summary>
+            Changes the distance dimensions of the TerrainPatch.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.EnableTerrainEditing(System.Boolean)">
+            <summary>
+            Enables or disables the vertex editing tab group controls.
+            </summary>
+            <param name="enable">Whether to enable the tab group controls.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.UpdateStates">
+            <summary>
+            Updates the control states.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.CopyVertex">
+            <summary>
+            Copies the currently selected vertex data (copies first selected vertex only).
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.PasteVertex">
+            <summary>
+            Pastes copied vertex data onto the currently selected vertex (pastes one vertex only).
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.SelectAllVertices">
+            <summary>
+            Selects all vertices in the TerrainPage.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.SelectInverseVertices">
+            <summary>
+            Selects the non-selected vertices and un-selects currently selected vertices.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.SelectVertex(System.Int32,System.Boolean)">
+            <summary>
+            Selects the specified vertex.
+            </summary>
+            <param name="vertex">Index of the vertex.</param>
+            <param name="endSelection">Whether to enable clearing selected vertices if one is not selected.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.SelectVertex(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Selects the specified vertex.
+            </summary>
+            <param name="row">Row of the vertex.</param>
+            <param name="column">Column of the vertex.</param>
+            <param name="endSelection">Whether to enable clearing selected vertices if one is not selected.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.MoveVertices(System.Single)">
+            <summary>
+            Moves the selected vertices.
+            </summary>
+            <param name="distChange">The change in distance to move selected vertices.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.SetSoftSelectionDistance(System.Single)">
+            <summary>
+            Sets the soft selection distance for terrain movement.
+            </summary>
+            <param name="distance">The soft selection distance.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.EnableFalloff(System.Boolean)">
+            <summary>
+            Enables or disables falloff.
+            </summary>
+            <param name="enable">Whether to enable or disable falloff.</param>
+        </member>
+        <member name="M:Voyage.Terraingine.VertexManipulation.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.VertexManipulation.EnableDataUpdates">
+            <summary>
+            Gets or sets whether the control allows data updates.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.VertexManipulation.EnableVertexMovement">
+            <summary>
+            Gets the vertex movement button.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.VertexManipulation.SoftSelectionDistance">
+            <summary>
+            Sets the soft selection value shown in the display.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExportTerrainRaw</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.ExportTerrainRaw.Driver">
+            <summary>
+            Driver class for the ExportTerrainRaw plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainRaw.Driver.#ctor">
+            <summary>
+            Creates the Driver class.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainRaw.Driver.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ExportTerrainRaw.Driver.WriteRawBinary">
+            <summary>
+            Writes the raw image data to the chosen file in the SaveFileDialog.
+            </summary>
+        </member>
+    </members>
+</doc>

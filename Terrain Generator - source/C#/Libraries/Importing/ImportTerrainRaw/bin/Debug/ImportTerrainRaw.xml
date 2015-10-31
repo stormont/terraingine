@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImportTerrainRaw</name>
+    </assembly>
+    <members>
+        <member name="T:Voyage.Terraingine.ImportTerrainRaw.Driver">
+            <summary>
+            Driver class for the ImportTerrainRaw plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainRaw.Driver.#ctor">
+            <summary>
+            Creates the Driver class.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainRaw.Driver.Run">
+            <summary>
+            Runs the plug-in.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainRaw.Driver.LoadRaw">
+            <summary>
+            Creates new terrain from the raw image data specified from the SaveFileDialog.
+            </summary>
+        </member>
+        <member name="T:Voyage.Terraingine.ImportTerrainRaw.Parameters">
+            <summary>
+            An object for containing terrain parameters.
+            </summary>
+        </member>
+        <member name="F:Voyage.Terraingine.ImportTerrainRaw.Parameters.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainRaw.Parameters.#ctor">
+            <summary>
+            Creates an object for holding terrain parameters.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainRaw.Parameters.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Voyage.Terraingine.ImportTerrainRaw.Parameters.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.ImportTerrainRaw.Parameters.TerrainHeight">
+            <summary>
+            Gets the terrain height specified by the user.
+            </summary>
+        </member>
+        <member name="P:Voyage.Terraingine.ImportTerrainRaw.Parameters.TerrainWidth">
+            <summary>
+            Gets the terrain width specified by the user.
+            </summary>
+        </member>
+    </members>
+</doc>

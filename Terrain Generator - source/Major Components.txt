@@ -1,0 +1,22 @@
+MAJOR COMPONENTS (DLLs):
+========================
+
+X - Indicates completed function (more or less).
+/ - Indicates a work in progress.
+O - Indicates dropped function.
+
+Vertex Editors (Algorithms to modify vertices):
+-X Noise Generator
+-X Smooth Vertices
+-X Rainfall
+
+Texture Editors (Algorithms to modify textures):
+-X Combine and shift textures
+-X Modify background color/texture
+-X Snowfall
+-/ Snowmelt
+
+Light Editor:
+-X Modify primary light color
+-O Modify secondary light color
+-X Modify direction of primary light
